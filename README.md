@@ -1,1 +1,1 @@
-This repository is for the AI Voice Assistant course
+This repository contains work done with students for various courses. 
