@@ -289,7 +289,7 @@ class Calculator:
         '''
         Creates a new database to store your command history
         '''
-
+    
         pass
 
     #---------------------------------------------------------------
@@ -313,7 +313,7 @@ def main():
     calls specific functions in the program. 
     '''
     # Creates an instance of a calculator class
-    c=Calculator('test.json', 'test.db')
+    c=Calculator(ft.page, 'test.json', 'test.db')
 
     # Calls the hello function
     c.hello()
