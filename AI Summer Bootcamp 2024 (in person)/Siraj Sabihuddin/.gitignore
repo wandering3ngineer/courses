@@ -1,4 +1,7 @@
 models/
 design/
 build/
-__pycache__
+dist/
+keys/
+__pycache__/
+*.tar
