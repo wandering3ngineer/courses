@@ -1,0 +1,55 @@
+{
+    "model": [
+        {
+            "name": "llama-2-7b-chat.Q5_K_M",
+            "file": "./models/llama-2-7b-chat.Q5_K_M.gguf",
+            "host": "0.0.0.0",
+            "port": "8004",
+            "key": "dummy access key:dummy secret key",
+            "auth": "sso-key",
+            "pid": null
+        },
+        {
+            "name": "mistral-7b-openorca.gguf2.Q4_0",
+            "file": "./models/mistral-7b-openorca.gguf2.Q4_0.gguf",
+            "host": "0.0.0.0",
+            "port": "8004",
+            "key": "dummy access key:dummy secret key",
+            "auth": "sso-key",
+            "pid": null
+        },
+        {
+            "name": "mistral-7b-v0.1.Q2_K",
+            "file": "./models/mistral-7b-v0.1.Q2_K.gguf",
+            "host": "0.0.0.0",
+            "port": "8004",
+            "key": "dummy access key:dummy secret key",
+            "auth": "sso-key",
+            "pid": null
+        },
+        {
+            "name": "tinyllama-1.1b-1t-openorca.Q6_K",
+            "file": "./models/tinyllama-1.1b-1t-openorca.Q6_K.gguf",
+            "host": "0.0.0.0",
+            "port": "8004",
+            "key": "dummy access key:dummy secret key",
+            "auth": "sso-key",
+            "pid": null
+        },
+        {
+            "name": "gpt-4",
+            "file": null,
+            "host": "api.openai.com",
+            "port": "443",
+            "key": "*****",
+            "auth": "Bearer",
+            "pid": null
+        }
+    ],
+    "api": {
+        "host": "0.0.0.0",
+        "port": "8003",
+        "model": "llama-2-7b-chat.Q5_K_M",
+        "pid": null
+    }
+}
