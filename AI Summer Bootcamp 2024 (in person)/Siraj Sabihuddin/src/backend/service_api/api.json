@@ -1,9 +1,0 @@
-{
-    "llm_host": "0.0.0.0",
-    "llm_port": "8003",
-    "llm_maxtokens":"100",
-
-    "api_host": "0.0.0.0",
-    "api_port": "8002",
-    "api_db": "api.db"
-}
