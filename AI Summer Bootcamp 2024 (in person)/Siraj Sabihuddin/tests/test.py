@@ -7,7 +7,7 @@ import json
 import sqlite3
 
 #-------------------------------------------------------------------
-# CLASS CALCULATO
+# CLASS CALCULATOR
 #------------------------------------------------------------------- 
 class Calculator:
     '''
@@ -285,11 +285,16 @@ class Calculator:
     #---------------------------------------------------------------
     # CREATEDB
     #---------------------------------------------------------------
-    def createdb(self):
+    def searchdb(self, searchterm):
         '''
-        Creates a new database to store your command history
+        Searches through the DB to find some command
+
+        Args:
+            searchterm : str
+        
+        Returns:
+            The list of commands that match the search terms
         '''
-    
         pass
 
     #---------------------------------------------------------------
@@ -425,8 +430,6 @@ def main():
         # Catch exception and print error message
         except Exception as e:
             print (f'There was an input error: {e}')
-
-
 
 
 if __name__ == "__main__":
