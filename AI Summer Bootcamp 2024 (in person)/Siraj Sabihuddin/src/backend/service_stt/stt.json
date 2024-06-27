@@ -1,0 +1,19 @@
+{
+    "model": [
+        {
+            "name": "vosk-model-small-en-us-0.15",
+            "file": "./models/vosk-model-small-en-us-0.15",
+            "host": "0.0.0.0",
+            "port": "8005",
+            "key": "dummy access key:dummy secret key",
+            "auth": "sso-key",
+            "pid": 45836
+        }
+    ],
+    "api": {
+        "host": "0.0.0.0",
+        "port": "8003",
+        "model": "llama-2-7b-chat.Q5_K_M",
+        "pid": 45472
+    }
+}
