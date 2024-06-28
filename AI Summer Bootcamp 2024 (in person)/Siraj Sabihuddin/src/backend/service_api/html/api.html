@@ -202,6 +202,27 @@ The host port passed in as a string </p>
 Returns an instance of the process in case we need to kill later.</dd>
 </dl></div>
 </dd>
+<dt id="api.speech"><code class="name flex">
+<span>async def <span class="ident">speech</span></span>(<span>model, text)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sends text data to service for TTS. The service generates
+a speech audio byte buffer object. This can then be saved
+into an audio file for playback</p>
+<h2 id="route">Route</h2>
+<p>@app.get("/speech/{model}/{text}")</p>
+<h2 id="args">Args</h2>
+<p>model : str =
+The model to use for the text to speech converstion</p>
+<p>text : str =
+The text data to convert into audio </p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>response </code></dt>
+<dd>StreamingResponse =
+The response object for the audio data</dd>
+</dl></div>
+</dd>
 <dt id="api.tokensMax"><code class="name flex">
 <span>async def <span class="ident">tokensMax</span></span>(<span>tokens=None)</span>
 </code></dt>
@@ -269,6 +290,7 @@ The string containing the transcribed text</dd>
 <li><code><a title="api.query" href="#api.query">query</a></code></li>
 <li><code><a title="api.request" href="#api.request">request</a></code></li>
 <li><code><a title="api.run" href="#api.run">run</a></code></li>
+<li><code><a title="api.speech" href="#api.speech">speech</a></code></li>
 <li><code><a title="api.tokensMax" href="#api.tokensMax">tokensMax</a></code></li>
 <li><code><a title="api.transcribe" href="#api.transcribe">transcribe</a></code></li>
 </ul>
