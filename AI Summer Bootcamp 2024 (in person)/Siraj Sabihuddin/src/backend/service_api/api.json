@@ -6,6 +6,9 @@
     "stt_host": "0.0.0.0",
     "stt_port": "8005",
     
+    "tts_host": "0.0.0.0",
+    "tts_port": "8006",
+
     "api_host": "0.0.0.0",
     "api_port": "8002",
     "api_db": "api.db"

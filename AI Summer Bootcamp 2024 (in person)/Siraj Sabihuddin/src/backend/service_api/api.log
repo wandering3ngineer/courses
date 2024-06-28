@@ -211,3 +211,914 @@ DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module 
 DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
 DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.toc".
 DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+INFO: (API) (2024-06-28 15:09:20): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello my name is Tom
+ERROR: (API) (2024-06-28 15:09:20): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 15:09:20): Unable to convert to audio
+INFO: (API) (2024-06-28 15:09:52): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello my name is Tom
+ERROR: (API) (2024-06-28 15:09:52): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 15:09:52): Unable to convert to audio
+INFO: (API) (2024-06-28 15:10:04): Terminating server
+INFO: (API) (2024-06-28 15:10:09): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello my name is Tom
+ERROR: (API) (2024-06-28 15:10:09): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 15:10:09): Unable to convert to audio
+INFO: (API) (2024-06-28 15:11:05): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+ERROR: (API) (2024-06-28 15:12:32): Request error: 'utf-8' codec can't decode byte 0xbc in position 4: invalid start byte
+INFO: (API) (2024-06-28 15:12:32): Unable to convert to audio
+INFO: (API) (2024-06-28 15:12:32): Terminating server
+INFO: (API) (2024-06-28 15:12:44): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:13:58): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 15:13:58): Unable to convert to audio
+INFO: (API) (2024-06-28 15:13:59): Terminating server
+INFO: (API) (2024-06-28 15:14:15): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:15:42): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 15:15:42): Unable to convert to audio
+INFO: (API) (2024-06-28 15:15:43): Terminating server
+INFO: (API) (2024-06-28 15:25:59): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:26:15): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 15:26:15): Unable to convert to audio
+INFO: (API) (2024-06-28 15:26:15): Terminating server
+INFO: (API) (2024-06-28 15:32:03): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:34:01): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR: (API) (2024-06-28 15:34:01): Error: name 'io' is not defined
+INFO: (API) (2024-06-28 15:34:01): Terminating server
+INFO: (API) (2024-06-28 15:34:05): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:34:19): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+ERROR: (API) (2024-06-28 15:34:19): Error: 'NoneType' object has no attribute 'status_code'
+INFO: (API) (2024-06-28 15:34:19): Terminating server
+INFO: (API) (2024-06-28 15:34:39): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:34:47): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 15:34:47): Response received
+ERROR: (API) (2024-06-28 15:34:47): Error: 'NoneType' object has no attribute 'status_code'
+INFO: (API) (2024-06-28 15:34:47): Terminating server
+INFO: (API) (2024-06-28 15:36:20): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:36:20): Error: name 'httpx' is not defined
+INFO: (API) (2024-06-28 15:36:54): Terminating server
+INFO: (API) (2024-06-28 15:36:57): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:36:57): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:36:57): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:36:57): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:36:57): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fd0ad406c50>
+DEBUG: (httpcore.http11) (2024-06-28 15:36:57): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:36:57): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:36:57): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:36:57): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:36:57): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:36:58): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:36:57 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 15:36:58): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:36:58): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:36:58): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:36:58): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:36:58): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:36:58): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:36:58): close.complete
+INFO: (API) (2024-06-28 15:36:58): Response received
+ERROR: (API) (2024-06-28 15:36:58): Error: name 'io' is not defined
+INFO: (API) (2024-06-28 15:37:28): Terminating server
+INFO: (API) (2024-06-28 15:37:31): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:37:31): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:37:31): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:37:31): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:37:31): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f225db30c50>
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:37:30 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 15:37:31): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:37:31): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:37:31): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:37:31): close.complete
+INFO: (API) (2024-06-28 15:37:31): Response received
+INFO: (API) (2024-06-28 15:37:31): Converted text to audio
+INFO: (API) (2024-06-28 15:38:23): Terminating server
+INFO: (API) (2024-06-28 15:39:00): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:39:00): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:39:00): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:39:00): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:39:00): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fe74f265350>
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:38:59 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 15:39:00): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:39:00): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:39:00): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:39:00): close.complete
+INFO: (API) (2024-06-28 15:39:00): Response received
+INFO: (API) (2024-06-28 15:39:00): Converted text to audio
+INFO: (API) (2024-06-28 15:41:22): Terminating server
+INFO: (API) (2024-06-28 15:41:37): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:41:37): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:41:37): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+ERROR: (API) (2024-06-28 15:41:37): Error: too many values to unpack (expected 2)
+INFO: (API) (2024-06-28 15:41:51): Terminating server
+INFO: (API) (2024-06-28 15:41:55): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:41:55): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:41:55): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:41:55): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:41:55): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f82d8e6c710>
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:41:54 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 15:41:55): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:41:55): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:41:55): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:41:55): close.complete
+INFO: (API) (2024-06-28 15:41:55): Response received
+INFO: (API) (2024-06-28 15:41:55): Converted text to audio
+INFO: (API) (2024-06-28 15:43:10): Terminating server
+INFO: (API) (2024-06-28 15:43:24): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:43:24): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:43:24): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:43:25): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:43:25): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f26aaaef410>
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Fri, 28 Jun 2024 15:43:24 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+INFO: (httpx) (2024-06-28 15:43:25): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 500 Internal Server Error"
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:43:25): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:43:25): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:43:25): close.complete
+INFO: (API) (2024-06-28 15:43:25): Response received
+ERROR: (API) (2024-06-28 15:43:25): Error: 
+INFO: (API) (2024-06-28 15:44:42): Terminating server
+INFO: (API) (2024-06-28 15:44:51): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:44:51): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:44:51): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:44:51): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:44:51): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fb0015c0b90>
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Fri, 28 Jun 2024 15:44:51 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+INFO: (httpx) (2024-06-28 15:44:51): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 500 Internal Server Error"
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:44:51): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:44:51): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:44:51): close.complete
+INFO: (API) (2024-06-28 15:44:51): Response received
+ERROR: (API) (2024-06-28 15:44:51): Error: 
+INFO: (API) (2024-06-28 15:45:45): Terminating server
+INFO: (API) (2024-06-28 15:45:48): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:45:48): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 15:45:48): Response received
+ERROR: (API) (2024-06-28 15:45:48): Error: 'NoneType' object has no attribute 'content'
+INFO: (API) (2024-06-28 15:46:08): Terminating server
+INFO: (API) (2024-06-28 15:46:12): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:46:12): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:46:12): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:46:12): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:46:12): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcc9a9d3e10>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Fri, 28 Jun 2024 15:46:11 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+INFO: (httpx) (2024-06-28 15:46:12): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 500 Internal Server Error"
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:46:12): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:46:12): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:46:12): close.complete
+INFO: (API) (2024-06-28 15:46:12): Response received
+INFO: (API) (2024-06-28 15:46:12): Converted text to audio
+INFO: (API) (2024-06-28 15:46:56): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:46:56): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:46:56): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:46:56): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:46:56): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fcc9a9ea290>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:46:56 GMT'), (b'server', b'uvicorn'), (b'content-length', b'8064'), (b'content-type', b'audio/wav')])
+INFO: (httpx) (2024-06-28 15:46:56): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:46:56): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:46:56): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:46:56): close.complete
+INFO: (API) (2024-06-28 15:46:56): Response received
+INFO: (API) (2024-06-28 15:46:56): Converted text to audio
+INFO: (API) (2024-06-28 15:53:23): Terminating server
+INFO: (API) (2024-06-28 15:53:30): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:53:30): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:53:30): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:53:30): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:53:30): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f078cdc7850>
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:53:30 GMT'), (b'server', b'uvicorn'), (b'content-length', b'8064'), (b'content-type', b'audio/wav')])
+INFO: (httpx) (2024-06-28 15:53:30): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:53:30): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:53:30): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:53:30): close.complete
+INFO: (API) (2024-06-28 15:53:30): Response received
+INFO: (API) (2024-06-28 15:53:30): Converted text to audio
+INFO: (API) (2024-06-28 15:56:57): Terminating server
+INFO: (API) (2024-06-28 15:57:05): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 15:57:05): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 15:57:05): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 15:57:05): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 15:57:05): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f54c23e8d10>
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 15:57:04 GMT'), (b'server', b'uvicorn'), (b'content-length', b'8064'), (b'content-type', b'audio/wav')])
+INFO: (httpx) (2024-06-28 15:57:05): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 15:57:05): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 15:57:05): close.started
+DEBUG: (httpcore.connection) (2024-06-28 15:57:05): close.complete
+INFO: (API) (2024-06-28 15:57:05): Response received
+INFO: (API) (2024-06-28 15:57:05): Converted text to audio
+INFO: (API) (2024-06-28 15:57:26): Terminating server
+INFO: (API) (2024-06-28 15:57:29): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 15:57:30): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 15:57:30): Response received
+INFO: (API) (2024-06-28 15:57:30): Unable to convert to audio
+INFO: (API) (2024-06-28 16:00:42): Terminating server
+INFO: (API) (2024-06-28 16:00:49): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 16:00:58): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 16:00:58): Response received
+INFO: (API) (2024-06-28 16:00:58): Unable to convert to audio
+INFO: (API) (2024-06-28 16:00:58): Terminating server
+INFO: (API) (2024-06-28 16:01:59): Terminating server
+INFO: (API) (2024-06-28 16:02:07): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+ERROR: (API) (2024-06-28 16:02:21): Request error: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+INFO: (API) (2024-06-28 16:02:21): Response received
+INFO: (API) (2024-06-28 16:02:21): Unable to convert to audio
+INFO: (API) (2024-06-28 16:02:21): Terminating server
+INFO: (API) (2024-06-28 16:02:35): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:02:35): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:02:35): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:02:35): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:02:35): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fe0641dc550>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:02:34 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:02:35): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:02:35): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:02:35): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:02:35): close.complete
+INFO: (API) (2024-06-28 16:02:35): Response received
+ERROR: (API) (2024-06-28 16:02:35): Error: a bytes-like object is required, not 'Response'
+INFO: (API) (2024-06-28 16:02:54): Terminating server
+INFO: (API) (2024-06-28 16:02:57): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:02:57): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:02:57): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:02:57): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:02:57): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f0b688be550>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:02:57 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:02:57): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:02:57): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:02:57): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:02:57): close.complete
+INFO: (API) (2024-06-28 16:02:57): Response received
+ERROR: (API) (2024-06-28 16:02:57): Error: a bytes-like object is required, not 'Response'
+INFO: (API) (2024-06-28 16:03:16): Terminating server
+INFO: (API) (2024-06-28 16:03:21): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:03:21): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:03:21): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:03:21): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:03:21): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f10aafde9d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:03:20 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:03:21): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:03:21): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:03:21): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:03:21): close.complete
+INFO: (API) (2024-06-28 16:03:21): Response received
+INFO: (API) (2024-06-28 16:03:21): Converted text to audio
+INFO: (API) (2024-06-28 16:04:49): Terminating server
+INFO: (API) (2024-06-28 16:05:15): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:05:15): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:05:15): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:05:15): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:05:15): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fc3993032d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): receive_response_headers.complete return_value=(b'HTTP/1.1', 405, b'Method Not Allowed', [(b'date', b'Fri, 28 Jun 2024 16:05:14 GMT'), (b'server', b'uvicorn'), (b'allow', b'GET'), (b'content-length', b'31'), (b'content-type', b'application/json')])
+INFO: (httpx) (2024-06-28 16:05:15): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 405 Method Not Allowed"
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:05:15): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:05:15): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:05:15): close.complete
+INFO: (API) (2024-06-28 16:05:15): Response received
+INFO: (API) (2024-06-28 16:05:15): Converted text to audio
+INFO: (API) (2024-06-28 16:05:40): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:05:40): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:05:40): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:05:40): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:05:40): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fc3993f6a50>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): receive_response_headers.complete return_value=(b'HTTP/1.1', 405, b'Method Not Allowed', [(b'date', b'Fri, 28 Jun 2024 16:05:40 GMT'), (b'server', b'uvicorn'), (b'allow', b'GET'), (b'content-length', b'31'), (b'content-type', b'application/json')])
+INFO: (httpx) (2024-06-28 16:05:40): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 405 Method Not Allowed"
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:05:40): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:05:40): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:05:40): close.complete
+INFO: (API) (2024-06-28 16:05:40): Response received
+INFO: (API) (2024-06-28 16:05:40): Converted text to audio
+INFO: (API) (2024-06-28 16:06:04): Terminating server
+INFO: (API) (2024-06-28 16:06:08): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:06:08): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:06:08): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:06:08): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:06:08): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7ff1bb55e990>
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): send_request_headers.started request=<Request [b'GET']>
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): send_request_body.started request=<Request [b'GET']>
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): receive_response_headers.started request=<Request [b'GET']>
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:06:07 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:06:08): HTTP Request: GET http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): receive_response_body.started request=<Request [b'GET']>
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:06:08): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:06:08): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:06:08): close.complete
+INFO: (API) (2024-06-28 16:06:08): Response received
+INFO: (API) (2024-06-28 16:06:08): Converted text to audio
+INFO: (API) (2024-06-28 16:06:52): Terminating server
+INFO: (API) (2024-06-28 16:07:17): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:07:17): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:07:17): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:07:17): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:07:17): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fb580bdca10>
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:07:16 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:07:17): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:07:17): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:07:17): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:07:17): close.complete
+INFO: (API) (2024-06-28 16:07:17): Response received: <Response [200 OK]>
+INFO: (API) (2024-06-28 16:07:17): Converted text to audio
+INFO: (API) (2024-06-28 16:08:11): Terminating server
+INFO: (API) (2024-06-28 16:08:15): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:08:15): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:08:15): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:08:15): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:08:15): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f89fce2a010>
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:08:14 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:08:15): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:08:15): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:08:15): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:08:15): close.complete
+INFO: (API) (2024-06-28 16:08:15): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:08:15): b'\xff\xf3\x84\xc4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO: (API) (2024-06-28 16:08:15): Converted text to audio
+INFO: (API) (2024-06-28 16:09:23): Terminating server
+INFO: (API) (2024-06-28 16:09:27): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:09:27): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:09:27): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:09:27): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:09:27): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f8515e57350>
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:09:27 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:09:27): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:09:27): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:09:27): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:09:27): close.complete
+INFO: (API) (2024-06-28 16:09:27): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:09:27): b'\xff\xf3\x84\xc4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\xf3\x84\xc4\x00\x00\x00\x03H\x01@\x00\x00\xffA!\x80\x01\xe5R"\xffP\xa15\xd8\x9b\x99\xff$~\x1b\xf8g\x82\x199\x82\x18/\x05\xbf\x06\xf1\x167`,\x1d\x0b\xc0\xb5\xfb\x8f\x1a%\x08A@\xd1\xbfB\x02C\xde2\x8f\xd4\xa8\xbf\xf9&{\xc9\x03\xd2bs\xc6EE\x8f\xf9\x99\x86\x0f\xc9\xdd\xc8GD\xc2!\xa1r\x01\xb97\xff\xe3\xc6\xcc0\xf3\xcf0\x9c\xd2\x111K\x93\x0fE\xa1\x99\x00\xdf\xff\xfc\xcb\xf3\x0c\x1f\xbd\xf3\xcf\x16\xca\x1et\xe1\xf1\x11B\xa5\xd9\xc8\r\x16\xff\xff\xffs\xcf\xbey\xfe{\xdb\xe2\xb3 \xb4\xac@T\xb2\x9c\xa6\x93\x1ci\x84nb\x176\xbe6\xe5?\x11,\xaa\x0f\xb1\xb0i\xa3\xa22\t\xd5Wve$ -F\xdc\xff\xf3\x84\xc4\xb3&\x84:(\x01\x99P\x00\x08\x12\x84!!~\xd4t\xd6\x9b\xf0\xd0\xd3\xd2[\xa6\xcc\xa2\x15\xa6Y+b.\x04\xe1\x0f_%\x05\xd4\xd0 \x85\xb0G\x07\xd3\xa6\x84.\x0b\xe3\x90\x82+P\xf8\xca\x06W6\xc7\x05\x03"\x90\xd02(\xb9W\xe18\xa8kU\xa7\x10\xc6\tWJ\x0b\xdal\xd5q\x15>\xe7V\xd6\x97J\x08*\x84F\x10\xd42\xad9\xba\xb1\x9d\xc1\xd3\xc8\xac\x12\xa7:\xc7\x8f\rI\x0e\x16n\xca\xce\xd5<w\xcf7\x9a@o\x8f\xa8\xadS7\xdfRFag\x87\x0e,\xd1\xb2\xc9\x88\x90]_\xe79\xb3\x8e\xa1\xc1\xae\xa1\xcf\x1fq\xa2j-cA\x874K\xc6y\x97\xb0u\x99\xa9\x16\xaf\x1e\xee>\xa4{=\xb5\xe1\xe6\x91\xff\xf3\x84\xc4\xcc<\xb4:$\x01\xd9x\x00\xe7\xc6w\xf5\xa8\xff\x15\xde\xe9\xbc\xd7w\xf9\xc5\xab\x9f=}\xa7\xb6\xa6\x8dzF\xcc\xb6\xb4ibW4\xdd!c{\xb5#\xc1\x9d8\xad\xce^\xe9\xab\x0e\xa9jN\xa5\xbc\x04\x95w\x9b\xd5oRO*\xff\x8a\x03J\xb8\x1e6>\xdcW<>\xb2\xcbf$6\xc6\xf4\'"F1G\xe9$\x13\x9a\x1dV\xd43\x94F`D\x1fy\xa7Q\x91B\xd4p\xa0\x05\xb7d\xf1\xb7^\xcbs~$\xab\x0f\x16\x94(\x1b\xde\xaa\x8b1\x89\xd1\xb3\xb8\xac?\x0c\xab2\t\x03\x91\x01B2v\x1cG"r\x86b\x03\xda9\xa7\xd0\xf6\xe6V\x95\x1c\x06\xf6\xe2\xe1\xce\xc4!\xd1\xe8d\x0f\xb3M\\\x80-\xe4\xed\x9a\xec\x0f\x1e\xff\xf3\x84\xc4\x8c<\x0bz<\x00\xc6\x1e\xbdGlC\x1dJ\xe1Xl\xf0\x0f\xc6Y\x1e3\xc7\xd3<(p\x9eVVw\xef\xe7V<\x8b\x02\x13\xcaC\x85\x9c\xbf\x8f+\xfb\xc7\xa3\xce\xf2lD\x89[\xb3\xe3\x11;\xf8\xf8\xf7\xae>\xdf\xdfWy\x12%7\x98\x9f\xeb\x14\x89H\x1a\xfa\xfb\xa6\xb3\x9d\xe3\xdfz\xa6\xfd<=\xe6Y\xa00\xfe\x9b\x83\xa0\x10\x81?\xc0\x0fi\xd5 \x8f\x01~*\x07\xe2}F|\xc63\x0eR\xf8s\xe5\xfaI\t1\x9a\xcb\x8a\x14\x1c\x90\x87\xda\t]\xf2\xc5\xad\x14q\xe3\x11u\xb0\xb1\x1c\xf9jz -\x89)\xda\x03\x1d\xc4C\x01-\xe4n*\xee\x02/=\x12\xeed0\xdb\xac\xfe?\x94H\xa0\xa6\x0cQ\xac\xae\xb6\xcc\xcf\xd2\xff\xf3\x84\xc4N7\x9bR`\x00~\x18\xbdIv,F\\\xa3\x91\xe7\x8d\x93\x05\x84\xe0\xaeg\xca\x8d\xfb\xd3\xe0\xc6\xd9|Q\xc3bc\xaa\xa0\xf2_,\x9f\x1ey\xe8\x8eH\x1e\x04@`\xb2ABP\xb4\xf0\xccPUX\t\x93\xa1\\\x9c\x96\xc9\xd2\x8d\xcf8u\xbf\\\xb50QO\xaa\x1e\xfb\xea:\x17\xd3)\xf7\xaa\xd2\xc4*\xb6\xc6v\xb7;~l\xff\xf3\xe9f.\xb9e)\xf4m\xf7\xee\xfbi\xe3Q\xb7\x8ez\x05\x91?\xccRron\xcaV\xdb\xb9={M\x9bz\xf9\xfd\x94\xfa\x12o}\xd5[\xcf\x8a\xe6\xd0\x8f\xee\xef\xb7\xdbu\x14\x11\x1e\xea\xbc[U\xc6\x17\xa0\x90x\xc9\xd9\xb8\x82\xa0d9\xd8\x9b\x91&\x0b\x08\xe6\x1e\xb6\x999\xde\xa5(\x10\xff\xf3\x84\xc4"0\x9a\xea|\x00c\xde\xb8\x93\x01m\xe2\t\xd2\xe5\x9c\xfbC\xcbx\xb8\x0f$]\x89Y\xf8p\x1e\x04\x05:\x9f6U\xe4\xf0\xe9\x80\x9f(H`\xb7\x8aX\xa02\x05\xad$|\xab\x12e\xfc\xc0?\xdc\xda\x98`\xa8\xd4\x18G8F%l\xe7\xfb\xfc\xe9\xf4wG\xfa\xbd\x94\xb6\x1a\xea\xe4\xab*<\xc6\xac+\xc0\x8e\xd9\xb8\xfa\x8f\x1e\xf0"\xbc\x92-\xf7\x02\xf7\xb3\xc9\xad&\xa3=p\xb4;\xfcM\x8c^\xff1\xf5\x9a\xcf\xed\x9fjc\xe3y\xa6&\xc7\xc55H\x9e\xfb\xcd\xe7\xae\xf7\x12\x93\x03\xa3\x84\x81\xf1`@Q"\x91\xc6\x16Q\x7f\x18\xa7o\xf3\xe2\xf6\x97 9\x9a\xc0\x8aM)(\xe1\xb1X\xf1\x1c\xd1\xac\xa8@\x1f\x11\x8f\x16\xb3z\xff\xf3\x84\xc4\x12)\x9a\x82\x94\x00K\xd8\xb8\xb2tZV\x8a\xc8\x8f\x9a\xa3-)\xd7g\x92`\xcf`Z\x99\x95@\xd0\xc8\xa1\xc2\xa2\x11\xc4\x83bQ\xdd\xc1H\xc8^T\x87\x03\xb4\xf9\xd6\x90\x1fg9\xa2\xb8?\t\xe87 \x1f\x8b\x0bvF\x9c\xa8\xb5\xc7\xd21z\xb3La\xe6,\xcbp=\x8d4T\xb2sd\xf7`\xa6\xd2\xe5\xb6\x8dk\x90\xeb\x1fG&{i\x15k{\xb1;^\xab\x8d\xfbp,\x9f\xdb\xbd\\\xebt\xe7\xdb\xb2\x9c\xc0\x98F\xf0\xf8\xa1!\xc3\n\xbcTF]\xea\x1a\'H\xf7\xa9\xce\xb4`\xa8\x1fO\xbb\xfb\x9c\x96\xee\x14\xc5\xc4u\xcb,\xea\xc7\x87\x06{\x88)s\x12\x99_Z\xc2\x80\'D}\xfca\x85\xcc\xde2\x16M#\x929\xff\xf3\x84\xc4\x1e-\x8b\n\x94\x00\xc3\xd8\xb8\xcaX\xd4\x08Dh\x86A\xfc\x80P\xd9H\x87=j-\x87\x83*eD\xcc]\x89\xc2\x18\x9f\x99\\\xcb\x974\xaa8\xbe\x9cd\xd5\xc9\xf3\x92\x90\xcb8\xcb\x13h\xe2*#\x0f\x82\x93\xe2\xd2\x1b5Y\x98\xbe\xb8\xda\xda/\xd4\xb5~\xbfj\xa9\xaaC\xd36x\xc1\xe5\xa7\x07-Y\xd6\x1aEG\xac\xe7gZ\xb8\xdd\xbb_\xb44\xfcr\xce\xc1\xab\xb2\x90\xc7\x0b?\xbd3\xd2\xd4;97\xdc\xfe\x99~s\xa9_\xec\xd9\xc9\xbd\xdc\xbfQ\xed\x87z\xbd\x8f\x82\xa0\xf0>Q\xa2\x01\x85O\x1c7\xfd\xde\xeau\n\xb3\x81\x034\xaa\xa0\xbbG\x8d\x02R\x98\x0c\xa1&\xe3\x9c\x82\xee\xbe\t\xbcg\x02L\xc3\xb0\xcb\xe6\xca\x86\xff\xf3\x84\xc4\x1a.\x83\x16\x94\x00\xd6\x1a\xb8\x88\x06\x84\t!\x80(\x96LI\r\'nLM5\xa1\x00\xc3\x8f\x8d\x14\xa6\xb4pD\x16\'\x04\xbb97*FB\xe7\xcaoN\xd4\x96L?\x96$4Ry\xb8uz>\xb3\x91\x17\\\x96\x1fAK\x12\xa2\x82f\x03\x94\xf0s\xce\x9b9\xa10\x82n\xe6\x89$V\xc4\x81\x81D\xf3\xcd\x07\x19p\xf1\x90\xc3\x0fQ\xf0v\x90\x91\x1c\xc5\xe3\xd3Sr\xf1\x89\xaa\x91In\xc7K\x13Z\x0e\xcbd\x19&\xb6\xd7]t\x7f\x7f]\xba\xac\xd7Zz\xee\xaa\xd8\xeb$\xa60rj\x99T&Mc\x83,\x12\x0eo\xf5\x7f\xb5\x89:n\xb2\x86\xd0,!\x97\xffu\x94\x129T\xa4|\xee\xde\x99\x0c0\x82q\xee\x9b\xc7\xff\xf3\x84\xc4\x13,[\x12\x98\x00\xd6\x9a\xb8P\xcaw\x10\x98\x1b\x11/\xb1?@\xf0\xb5\xf1\xe2\x9a\xfd\xd6|A\xa4G\x83\xdb\x88U\xd4\xf85\t0{\x97e\xb3K\x068\x0e-v\xe5\xceD\x10\xcd\xb3N\xcbi)\xe4\xaf\x93P\xd4V9\x06\x88\x90\x9c\x82\xf1*fQ0\x1e\xe1\xc2%d\x8b\x9f8I\x8b3c\x14N\xa2\x88Z\xd9j&\xb9\xa0^\x0e\xa8\xc4\xbad\\\x1d\x0f\xcf\x99\x19\x9c\x1e\xa6\xcbEJH\xed\x1a\xa7\x8d+m\x03G\xfb~\xbf\xdf\xff\xae\x9d\xab\xbatjS\xbdh1\xc4\x0f2\xda\xa3\x03A\xc0\x88\x81\xc5\xcd\x90=\xbbGv\x84\xfe\xa6\xb8\x0c.E\xc4\x04\xf5\xabk\xfb\xc8\xd8\x89\x91m\xa7u\x1d\xb2\xbc\xcc:F\x8d\xb7/\xb9\xff\xf3\x84\xc4\x14*b\xf2\xa4\x00\xceZ\xb8\x05\xa2y\xaf\xc8\xb4\xb5\xa9eP\t{\xc1\x01\xac\xdc\xae\xd4\x9b]c\xc09\xd5\xec\xcbP\x9ea\x82\x1c\x02\xe2\xa5\x9a\x87\xf3R\xb8r\x8f\x1a\x968\xef\xab\x9b\xd9\xd2X\x8e0E.\xc3\xb7\x9c8PN\x00u\x0e\xa4\x90\xe7\x18\xe26 \x02Tlq\x89\x851\xe0<\x920b@\xbaR6A\x04\t\x02T{$\x94\xf9 b<\x8c\x89\x86\x8cdQ62R\x0e\xb72I\x04\x14\xb5#\xff\xff\xff\xff\xfbY_n\xba\xd2F\xcbI\x8e(\x10\x17\x01)\xaba\x98t)J\xf6\x7f\xfe+H\xe2v\x156\x85\xc7\xbf\xf8A$\x93(U\x8a\x91\xdb\xe4\x05\xa1U<\xb22\xb4\r\x18B\xf1\x04M-\xb5i\xeb\xff\xf3\x84\xc4\x1d%\x11\xc2\xa4\x00\xce^\x94\x04\x92\x8d9g\xc9BT\n\x02\x82\xb2\x98\x94\xba\x88\x12\n\x06\xd5\x84\xd4G\x82\xd64F%\x0f_*t\xc2d\xe9\xa6\x9a\x95\n\xa2\xfap\xcc\xfc\xefC\x8f\xd2\x12t\x96\xc2\xe0L\xcb\xb2p\xfb\x84\xe2\xaf\x85\x1d\xec\xcf\xe4\xcc)^\xcb<La\xecW\x94\xbc\xad\xcc\xb1w\x8a\xd26-\xaf5\x8e\x88\xe8&D\x16\'\xff\xfe\xff\xae\xb6\x0e\x86^A1f\xd0\xfa\xd1\xabG\xff\xda\x95E\x83)\x9d\x01\x01U\xbd\xf9\xce\xca\x85\x00\x0f\xe1P\x89\xf9\\\x1ee\x8a\x00\xc1\'\xd4nb^+\x02\xf8\xa06\x13MM\x11P\x06M\x0e\xee3\x8a\xcfucUe\xb0\xd0\x01\xc6\xd2+\x166\xddR\xc9\x17\x05OG"\xff\xf3\x84\xc4;&9\xde\x94\x00\xd6\x1e\x98\xd5\xe5\xb1i\x99\xdc\xb7\x065\x97\xe6o\xa5\xd1m\x1c*(:x,O\xc9\xf1\x95t\xc9n%\xc8s5j\xfb\x19\x8b\xfc\x19\xaf\x17\xd7\x0f^\xd7\xef\x1a\xb6?\xae\xed\x8dj\x1d\x7f\xfe\x1es(Yno\xff\xa0_\xfeop\x945\xe8\rYB2o2/2\x13\xad\xcc\xa8\xddHz\xc8\x89\x80\xa12\xa1\xa1+\x90\x99\x8b\xe3\x8c\xc1) \x0c6\x8e\x91\xb8\xd40\'\x82\x8c9O7\xa1\x11\x90\xa6\xcdo\xd3TF\x9b\xd8n\xeb\x1by\xac\xff\xc7DaO\x99U\xdccm\xf8-\xb2\xdb\xd9\xd4\x96?]\xc7=c\x0e\xe1\x97#\xb8<\x9c\x87\x9a\x0f\xa0\x1cV\xe7\x92\x80\x10\x94\x9d{\xea\x7f\xaf\xff\xf8\x99\x89\xff\xf3\x84\xc4U"\xc1\xe2\x8c\x00\xde\x16\x98\xa8r\x08\xb9\xce\xb2a\x95&Z\xa3\xc7\xf3*\xb5\x1e\x90D\x04\x06\xff\xf0!\xd2\x076\xff\x19\xfa\xe5\xf2\x8b\t\x88\xc1\xe8P\x02\xe7\x1f\x1c\xa7P;)r\xd8\t\x93\x18\xd3&6\x90rg\xed\xcfBL,\x14K\xc5\xa1\xceG\xc6\x01\x0c\x13\xd0\x08\x18\xae\xe1\xcax\x00F)\x9fu\xf1\xf1\x08\xdb\xde\x7f*%D\x1fr\xdd$\x16\x14\x14V[\x84y@\x0f\x85q\x7fY\xc7\x1ekZ\xdey\xb8\xdc\xee\xb3\x89\xbf7\xbfq\x86\x91\x03_\xd5Lb\xcdv\xd7\xe1b\x93\xbf\xff\xde\xf3\xff{\xee\\\xff\xd5/<\x8a\xa0\x10\x94H \x00\x1c:\xa7\x17(\xc48\x90\xa9C\xa5s\xff\xff\xff\xfa\xaa\xab39\xabO\x93\xff\xf3\x84\xc4}\'\xfc\x0e\x88\x00\xde\n\xddJ:\xce\xd7\xefw\xdb\xd5V\xf2<a\x8a#\x94\xce\x8eb\xb2\xaa\xd7\xa5\xca\xcc\xf4\xec\xef\xfb\xd8\xd9"d\x1d\x0c)\x83h\xee\xc7\x9b\x89\x85\xf2\x1c\xc6GZ\x06V\xc3\xa3\\")z\xe2\xf1\x07\xacF6\xb7A^8\xcfY\xb7y~\xe3\xa0\xa3\x1d\xcf\xe9\x05J\xea\xda\xa4\xac\xfa\x03F\xe3\xc8\xbfr\xc8k?\xfeM\xc2\xbf\xff\x05\xf7Z\xf8\x82n%)\xe0/\x82\xcd\x0f\x93\xdfh}\xff\xcd\xa7\xff\xe6\x1c{\xfcR\x1f\xbd\xf7\xe1\xcf\xbaDj~\xf2\x9a\xcff\xd55xY\xf2<\xf0-\xff\xf2i\xb5\x99\xcd\x17\xd9\xb3\xa9r\x85\x0e\x93:j\xaa\x08=@\xe3^\xb5B\xa4\xa6\xd6*\xc8`0!\x0c\x8eb\xff\xf3\x84\xc4\x90$I\xea\x90\x00\xd6\x1e\x98G\xaa\xfdg8\xef\x98\xb2Z\x03\xe2\x93t\xae8\xc49\x99\t\xb2\x87]\xa3\x18\x1a\x89\xa1\x841\xa6i1\x01\x98s\'\x8b\xe7\x93K3\x85\xd5\xed\xd9\xa4\xb4\x1b+\xc9^\x9a@\xa7\xc4\xba\xc3\xb1\x97\xbd\x06r\xc4o[\xc9\xd0j\xd6\xbf\xb4\x8c\x81j\xd9\xfc\xed\xaf6#&\xb3ir!\xc5C\x99\xb5Xqh(D\xf6Y\xdc\xa1\x87\xbf\x9d\xa9C\xde\xfd\xd8r\xbd/1\x8f\xbb\xe1\xe0t8h\xb8\x01\xc3\xc0\x88@R\xc4=\x8f\x06\xe0LPXy\xc5\x96\x8e\xf3\x7f\xff\xf3\xff\xff\xff\xbd\xcf\xcc\xb4\xf2\xf1ZH\xbbL&\x9c\xa6\\O\xbb\x91\xd7\xa7u\xfb\xd7\x7f?\xcd\xa5\xc2}\x7f\xbd\xcc\xbf\x112\xfao\xff\xf3\x84\xc4\xb10\x14\x06\x94\x00\xde\x10\xddq\xd7\xdf\xd7]r\xb7O\xc8\xd2\xed\xa0\xa6\x08~\xaa\xa1\xc3\xba\xa5\x19\x99q\xe7\xf14;\x9bb@\xfc\x7f\xc4D\x8c\x951c2\xb6r\\3\x12e*\xa4zt\xd7:$\xba\xd9\xc4\x1a\xc1n\x10-j\xd2P@\x81\x00\xccP\x16\x9a\xbc\x0b\xb8,\x01\x1a\xd94\xbe\x92>\xffJ\x7f,e\x92x\xac\x18\xeb\x84\xea\xe9,t(\tY\x80>\x92GAp\x1e\xb2^IO\xab\xa8\xda\x11LTja\x8c\xb4\xee\xce\x99\xda\xdb)\x05\xb9\x95\xe4\x05c[\xd5d(\xec\xec\x96\x8b5\x9b_5\xcb{J\xd9y3V.\xac\xef\xff\xff\xff\xfb\x7fV{=\xedG\xea\xe2W\xe7\xbd\x1f\xd9\x16$hp\x01{]\xd5\xff\xf3\x84\xc4\xa3-A\xde\xa0\x00\xce\x9e\x99\x1b\x86\x17\xbd\xfe{&\xea\x11X\x9cFM\xfd\xdd\xbf\xe4\xbd\x9b\xe6\xee7\x00\xced\xd7f\x04`\x81\x8a\x85\xce73\x06\x13\xde\xc3,\'\xfd\x92F\x00X\t\x05>\xfcI\x11\xa1cKg\xe6X\xf2\xc2\xbf1h\xca\x97\xa2\xb3\x06\x86\xd5:\xaa)\xb3Eq\xd4\rj\xb2\xe8jE#\x0b\xe53b\xbdt\xc2\x9dmcD/\x9f\xa7\xe1($d\xf90V\x0fBP\x9b\x17$*:]\xd2\xba|\xb9F{XSw\xba\x85\x1e\x8a\xec\xb0\xc3pneU63\xd9j\xf5\x964\xcf\'b\xbcHX</[_\xff\xfe\xb5.\xc6\xa4\xfc\x995\x86\x18\x1f\x02\xbd\xae,E\xaf?\xff\xe5z+\x1f\xf5\xd5\xb9\x9e\xff\xf3\x84\xc4\xa1\'\x89\xd2\xa4\x00\xce^\x94\x10Y\x86j\x91\xb96\xd2\x13\xa2\xee\x0c\x8c\xc7\x9d\xacA.\x02\t\x0eR\xcda\xd5\xebp.\xa3\x01g0\x97m\xae\xb2\xa7\xfaj\xe3x\xd6\x9eg-\t\r\x8d:U\x9c\xbe\xe96\x85-\x81\x9e19T\xfe\x14\x918\x94\xaa\xe4N\xb4\xcb\x83"\x95D\x89?X\x0b\x99\xb8\xb4?\xde\x91\x07TU\xa4R\xbe&\xdf\xab\xb4\xf1\x8f\x0c\xadQ\x1b_\xac\xce\xfdm!\x1d\x81\x11t*+\xa7\x18p\xa3\xde\xb1`n4\x0c\xb8R\xfb\x94\x81\xa0\xa2H/\xff\xfao9\x13\xd2\x95\x05\xe7\\\x85\xab\xdf\xbb\xff\xffF\xfa\x15\xcf\xee< \xe9&w\x10\x10$\xc1x\xf1\x80iBs\xc36\xc6\x0f-N\xb7\x85[\xc4\x8c\xff\xf3\x84\xc4\xb5&\x11\xd6\xa4\x00\xce^\x98\xea\xc4\xa1\xb5\x8e\x977#\xcc\x01e\xadY\xc7AC[$\x81@\xc1\xc7\x16J\x9c\xa7h\x8c \xa5*\xac*7\x18\x87\xa2\xd3\xf4\x17w\x84\x13\x0f)\xda\xb0M\xcb\x89\x901\xc6\x90\x9d\x87\t#\x1b\xe7!z\x8c\xe0\xadjb]L\xae\xc3$w\x17\'6\x96\'\xec\xaay\x14I9\x8f\x04Z\x9d,\xd9;C\xebZ\x90\xa9\xb7\x16\xad\xc7\x81mg\xc6\xd9\x80\xbe\xe4\x7f\xfc\xf4\x99\x01Q\x88*\xbc\xd9\x14\xfe\x98\xd5\x9d\xbd\x9a\x0c\tsb\x9d\x0e\x88\xdbnU!:\x90n-`\xb0<\xc5\xd2\x07&\xb6\xb6\x00\x02\xe0\x18\xcd8\x8ck-\xa2\x94!1\x93H\xb4\xa6\n\xc5\x16\xaf\x03\x8b\rb/c\xfc\x18p\xff\xf3\x84\xc4\xcf%a\xde\x9c\x00\xce\x1e\x98\xb4\xce\xba\x02\xc6\x80\xc3r\x93\xf0\xa3\x8a\xbb;\xc4<\xb17\x13\xc0\xd0\n\xe2\\9\x00\xb0\x06"\n\xa5\x02|\x81\x12\xe4<\xb7\xa4\x94J\xc4\xe2\x8d\x86\x94B\xd5\xb0`,\xab\x9b\x98\x11\xacI$A\x94\x86\xaeL\xd3\xc8\xe5k7\xc9Z=\x95\xc5\xe6\xe9\x11\xd2\xabn\xdai\xbcOA\xc5\xd4\x97#\xff\xeb\xa5l\x16@\xb2O\x13<&;\xfd\x8fUO\xff\xfa<a\xcf6nS\x9c\x18PVJj^8p\xa0|u\x97\x08\x14\x06\xe5b\r\xc8fY\xf4\x0e\xda\\V\xe0\xee\x9a\xbcTdR\xedK\xe7\x14i\xbb\xe5n<D4Z\x9d\xdb\x01:\xfc\xc1\xe2\x81\x02\x95{\x16qf\x0f\x80\x17DIY\xc3\xff\xf3\x84\xc4\xec)\xb9\xd2\x94\x00\xce\x9e\x94"^\xd0r\xa9\xa8\xb4>\xdf\xc1E\xfb\x95\xbb\xcfpC\xefC6HQ\x00K9\x9c\xde\x10\xa0\xee5<-\xc6\xcb)\x8b\x98\x92Q\xd1\xd0CM\x8f\x8c\xd9\x112$\xc4\x0cj\xb1\x8c\x0e\x04\x83\x0c\xa8\xc8\x01p\x1a\xa9\x891\x97"(\x16G9#\x02\xc9\x056/\x9a\x13(\xad\x8e\xbbM\x12\xd9\xf7\xff\xef\xff\xf7\xad\xde\xb4\x9ar\xcaA\xd9i\xb2gXhl\xd3\x0f1\xc8E\xf0\x93FK\xe8\xebv\xaaX\xf4\x03\xad\x00\xa5,M\x9b\x85\xd8!x\xaci\xf5\x0c\x02`\xd7\x9aAT3\xe5\xd0\x97R<\xcf\x1c\xcc\xcd\x0ek\x15e\x05\xdcc\xd2\x850\x07\x01\xab(i\n\x04\xfdCmm\x85<\xd0\x1b\xb6\xff\xf3\x84\xc4\xf81*\xc6\x88\x00\xd6b\xb8\xcd#\x8c\x01\xcd\x0c\x1c\xb4\x11\xb1\x15\x03\x8b\x8d\x14W\xe5\xbbmZ[+^\xe8\xa2\xb0.\xfb\x05\n\x81\x840\x02\xf4\x88P\x98M\xc1,\x0b\xe2\xcdj\xb7\xcf\xeb\xf3C\x16\x8c\xf6QKf\xc5%<\xb6\x8a~[=\x03\xdb\x87g\xdc8\xb3\x85\x18k\x12\x95b\x80i#\x0e|\x05\xdbT\\\xbbR\x96\xcdl\xfbk-\xf6\xf8\xa0\xa8\xb2?\xff\xdf4\xd4\xcb.65G\xbf\xff\xfe\x8b\x12\xd45\r\xdbf\x85v\x16\xf3\xfab\xa3#@3\xca4d\xe7\xaeR\xc1\x02T@\xe1\x00\xa0\x18\x18i\xf0\xf4\x90vY\xf8\x8c\xfeq\x14\xeedo\xb5:\x04 JY\xa5a\x86b\xb6\x12\xe1\xc1\x98\x18\x04\xb5\x9a\xf4\xd8\xff\xf3\x84\xc4\xe6*\xa1\xd2\x8c\x00\xce\xb0\x944B\xb6.\xa4f\n\xa5D\xe5D8\x14ht7\x01\xacU%\x0f\xdc1`\xdeF\xf4C\xa0\x15R\xa5\x11K\x86\xc0\x99\xd4\x8d\xd2\xca\x1e\x8d\xb7\xd3R\xdc\xa7l\xe3/\xce\xadH\xc6\xa9\x9b\x0c=M\x0f7\x99\xbb0\xc2\xc5\xca2\xc3W\x0e\xf2|*[\xc6\x1e\xdd\xba\x08WkM\xff\xeaw\x1c\xb5|"\x1c\x7f\xff\xfb\xa6JUA\x96\xfa?\xfe\xfe\xf9\xc5\xbd\x03\xcd\xb9 \x81`\nF*\xa5p\x1e\xe6\xe6b\x87\xe2\xc0\xed\xd0\xaa\x06\rJs\x9f\xe3\x00/\x05\xd0\xb3D%\n\xd0\x18\xb8\x03Ed\x80Q\xc8\x1aR\xa7D\xc8\xa8\xe7\x1a\xf3V\x95YJ\xea\xd5\xd8\xc2\xc5\xa2\x86\x88\t8\xd1\xfb\xc2\x88\xd4\xff\xf3\x84\xc4\xee+\xe1\xde\x80\x00\xde\xb0\x98\xb6\x81\x0e\'$Rp\xaea\x81j\x15$\xa0\x1d\t\x12_(qHe\xec\xca\xc2\xa7\x03\x86:/Bb\xba7\xae1\x19m4\x96\xedNAx\xff\xc2/v\xb4\x0b-\xa7vh\xeaJR\xba}\xe7q\x0b\xd5\x03KY\xfc:&\x19\x00\xf3H\x1e\x0c\x188L%\x1c\xe2\xc1\xe70eTp\xbey\xb4\xff\xff\xff\xfa\xd2\x95\xf4\xab*\xbf\xaa~\xdf\xff\xfd^\x8b\xaa\x7f\xd1\xea\xb9\xa8w\xe8\xe8\xaay\xd1\xf0\xc0\xe1q\xde\xb5ZP\x1bT0\x05dr\x8d\x88\x03\x0e\x18\x8d$\x14\xa0t\x047\x81j8\xc6J:D`\xfd\xb2\xa3\x0e\r\xaf\xa7\xfc\x89\xadJ\xc9C\x83\xadP\xa1Nx\xb3$\xfb\x95C\xe5\xf6\xff\xf3\x84\xc4\xf1.\xa3\xde|\x00\xde\x8e\xdc_\x97i\x08T\x83\xe3\x80B\xce\xe6\x1f6\x93\x04\x8b\x16\xe0\xd8\x19&X\xf2\xae\xd0\xf1.\xb6F\x845\x036\x90\x17\xda~\x9a4\xa7\xf3\xc6\r\xcf\r\xce\xdb\xfc\xa6\xf2\xdd\xd8E\xda\x8dR\xdc\xfcd\x88\x07\xdd\xac\xcc\x95\x83Z\x95\x98\xcb\xc5\xae\x02\x0fB\x81\x95,\n8\xe4d\x82\x8e\x928|\xa3\xbe\xff\xff\xff\xfaQ\x9f\xfa\x7ft\xe7\x7f\xaf\xff\xff\xfb\xa5\xed\xff\xfe\xc9n\xfb\xb9\xf2\x05T\xe2\xf3jDW}t\x18\x94\x14<0o\x8b4k2:q\xec\xc0\xc2\x03\x93\x04\xa0\xb4\xd30\x80\xef\x92\xc6z\t\x04V\xc1\xa3\xabt;\x1dKV\xfe\xdcqJ\xa8\xb2\xb4\x9dS\x99N\x8d\x04\xb7ET\x04!\x9d\xff\xf3\x84\xc4\xe9*\xdb\xd6x\x00\xdeN\xdc\xb131,9l*&Py\xd9}\xd7\x98\xb1t\x90R\xa1\xd3*\xc8\xd2W\xc8\x90Vu\x11k\xac^MKZ/\x8c\xa6Yo\xe5Q\x7f\xf9To\x99\xc9f\xa9!\xe6\xb7\x0fD\x16\x19$\x19\xab\xfc\xca\xa5\xf8a\x1e\x05\x89\x0e\x03\x07\x85\x81\x04\x80!q\x11p\xe8\x088D:&A\x83\xd3?\xf4\xff\xff\xd3\xff\xfe\x8a\xe8\xdb\x7f\xff\xff\xff\xf5\xff\xb2<\x96d9iz\xbbh\xc2Bb\x84J\x8a7j,\xe1X\n\tL6\x9c\xb4n\xb8\xe0)\xc1D8p\x11\nQ\xeb+\x81\x83\x9d\x97\xd5O\xce\xc4\xa0\xb5\xb9\x17}K\xab\x03R\xc4Xd\x8e\xbdF\x81Y\xfdP\xd7\xaa\r\xa5X\xeb\x08\xe5\xa6\xff\xf3\x84\xc4\xf0-S\xdet\x00\xe6\x8a\xdd\xa8\xf6Td\xbb\x06:\x11qZ\xd0u\x01.\xb3A\xac\xb0\x88\x9a\x8d\xaab\xa4\x19\x8a\xfaq\x9f\xb8\xf4\x8e\x86\x9e\xceR\xab\xb4\xd9v\x9e\xf7uf\xb6\xab\xd4\xa5\xb3=-\x91PB\x1a\xf4\x10\xefX\x89SL\xd6\x9b\x96\x14\x0c\x89HHp\xe1\xb0\t\x1a\r\xc8\x04#\xe2 \xa4\x84\xb0\xeb3\xff\xff\xff\xfa\xff\xff\xdd\x9bf\xff\xff\xff\xff\xff\xeb\xfbw\xd9\xce>\x88\x83G&!\x1d_\xe9\x81*\n\x0cD\x81\x00 9\x96\x1e\xe0*r^\x88\x00d\xd8\xf2d\xc2D\x18\x94\xc4q\x95\x828\xb6\x8cy\x0c\\jj"\xf8\xc8\x9f\xe7\x99\x14\xbbC\x00,4\xba\xb2\xab@v^\x91A\xb4\xcb\xc9\xca`KYn\xff\xf3\x84\xc4\xed+S\xcap\x00\xde\x0e\xdcF7\x06\xe9\x12T\xca\x1cJ\xe8\xe4m\x86\xab\x95\xf4_\xe2\xd93\x85t\xa7H\x9c\xe5\xcbh]\x1b\x97\xbbo\x0c+a\x7f\x1f\xd6uu\x9e\xbf+\xf4\xb2\x9aJ\'i\xda\x93\xba0<\xaa\x93\x1f\xc6\xbc\xe4*P\xb8\xd8\x91\xa2\xc1\x14\x01\x85*$\x03\x90.\x10\x14\x1d\x1d9\x8dd\xff;\xff\xff]\x95\xbb\xd3\xee\xcb\xb5\xff\xfd\x17\xb3\x7f\xff\xd3\xf75\xaa\xfd&\xa3\x1c\xb4t\xa8\xf14*\x03\x0e\xb5_L\xa2j6C\xf3\x1d\x050\xd0\xb3H\x9a\x1b\xd66\x01\x83\x01w=\x0esr\x18\x1d\x1a1$\xb3t}\x0eLK\x01\x90\xd1@\x071\x1f\xdf\xf4\xeap#e\xfct\x1dr\x17gQ\x1a\xe4nW\xa1%\xff\xf3\x84\xc4\xf2-\xd3\xd2`\x00\xe6\x0e\xdc\xb9r\xac\x1e\xa0\t\x86:\x06\x89\xf2\xc2\xb88T\xe8B\xd2E\x08c\x80\xae\x82t\xc8\xe6\xb2\xbbT90\xef\xee.\xe2\xfc\x7f\xbcZ\xf8\xcd\xa9\x16\x8d\xf01:\xf1\xccX\x9fg^\xd8\xb4tlz\x0e\x89\'\r\\p\x8c!\x08\x008lyBCS\x98\xf6g\xab\xd5\x9c\xda\xfe\xf5\xd2\xad\xbe\x9f\xf68\xea\x9bEG\xd5\xbd\xbf\xe7\x7f\xff\xabs\xa7ot\xd9\xf7Nr\\\xd3\x9dN\x1d`\x15\xde\x92QPV7\xbf#\xb5/<\xc9\x13a\xc85v\xd3\x90\x116V\x00)x)\xd4\xc8\x8cA\x85CK\xe6hV\x0521\xb0S\x98\xb3\x1d\x80\xb9%a\x80\x81O@\xc0\x8b\xca\xb1\x13Y\x80\xbf\x8e\xac\x05\xff\xf3\x84\xc4\xed,\xb3\xd6P\x00\xdb\xce\xdc>\xee\xcdF\xa6\xdcU\xcc\xbe\x9a[\x88\xdf8\xae\x94\x17\x075\xe7I\xdb|\x9a\xf3\xa3\x18\x8bJi%4\x13\xe1\x91\x1232\x9c\xad\xcbM\xd2\x8f\xa8\xc1\xea\xb0\xd2\xaa2X\xb8\xe8\xa8\xb9\x80\xd0\x84\xb9\xe6\xbcjy(J5\xb9%k\x11+\x92\x8d\x7f%R{+q\x89\xce\xe9h\x14<\x15,\xeaBH<\x05\x8cC\xc9\x0f"\x02\x014\n\x90\x9f\xd9;\xf8f\x86\n\xc5\x9e\xb4\x9d%xU;B\xa0 \x98\n\x15M_Jj(s\xd5\xd35\t\xa8\x9a\x02\n\x9c;\xec\x86\x1c\x81\x1ad\xc3\xb76\xff\xc3\xd2\x99\x9c\x03I\x13\x05`\xc2$d\xcd\x90-0~q#B\xd0\xbc\x86\x0cM\x82T\xd0\x90\xff\xf3\x84\xc4\xed-\xa9\xf2\x14\x00\xdeR\x989\t]M\x01\xcc>\xd2& \x93\xab\xe6\'lI\x12\xee|\xcf\xdbi\xd5\xeb\xd2bJl\xda\xacx1\x85\xc8@F\x100\xfa\xc2\x13\x05\xadj\x0e\x06F\x1dt\xf3\x0c\xa2A\xb3\x98\xab\x1b\x18\x91I\xab\x015)qE\x1d\x9d\x83\x16(\xd1\x9a\xd8CZ{\x12l\xc2\xa5_aQ\xa48\xd9\xb8S?s\xcb\xed\xd0\x97Z\x9f\xb4\x87\xd2\xfc\xbb\x03Os\xc9\x8c\xa9)\x1bS\xc4\xe9\x9a4\x15 \xc0\x88\x0f\x92Z\x0c\xacZ\xaa\xaa\x9d\xcd\xac\xe4Z$\xd2`(e\xc6b3\xb1w\x17\x1bi"};&(\x16\xd5\xe8tbQ!\xccUfqC\x98\x9d\xb2\xc5\xac\xac\x0bK\xa7\xedMoU\xcf\xafj\xc6\xff\xf3\x84\xc4\xe9*\x04)\xe8\x00\xc2F\xdde\x95C\n:\xb5Z\xf6$x\x11\xe5\xa4\xb5{\x16\x14g\xd6\x8b\xb8\xb7\x9a\x13\x12\xba$f\xe9\xdb\xa3\xf29,pT\xba+\xc6\xd9\x84\xa8\x0ci\xa6\xe4\xf9\x96\xca\xd4w5\xabf\x8b\xc99\xfeT\xd7\xd4i\x93F\x9eq\xd9\xcey\xf3\xebk\x17G%\xcd\xca\xdc\xa7oF\xce4\xd3j&\xa3\xdafs\x9d~MG\x0eK\xf8^\xb5\xe3\x12$\xe8\x9c\xf5\xeafq\xab\xba.\xdb\xebg%\xa7\xe4\xcf\xef\x94R\xc7>*%I\xf4\xaa\nu\to\x11\xac\xd4\x8a\x031\x1c\xa5\x03^\x11\x97\x02w\xfbC\x00\xbd\xcd\x1d\xab\x83\xa0\xc8b9\x03\x02\xe9\x1f\xbejg\xa2Zu\x81;\xc1:\xe3\xb4\x95\xbc\xc1V\x92\xff\xf3\x84\xc4\xf4/<\x15\xd4\x00\xc3\xcc\xdc\xab)\x8f\xed +Z[\xab\xfd\x94\x93\t0n\x02\xbb\xc7\x0e\xc0\xcf\xcfA\x15ZP\xd1b\xca\x1f\xe5\x93\xd3\xb4\x90I\x07)\xc4(\xc57\xc7\xd7^PE\x05\xe2q\xe3\xfe\xd7\xa7\xd1\xe7IK/\x7f\xefn\x86\xe1>O\xdc{\xec\xec^\x9e\xa2\xa7K[\xef\xf9\xd0\xe8^\x13\xe4\x1e\x1f\xfe\xd4\xe5aJi\xda\xcf\x9f\xc7!\xd3\x8b3\x99\xdb\xff\xde\xa6\x94Z\xe7q\xb3\xff\xef\x9f\xcfg?o\x7f\xef\xad\x9b)\xbaj\x9e\xff\x03D\xc5 \xaeP\xe2T\x1aO\xbb\xab\x11@\x18|U\x9a2G\x92f\x1b\x95\xcd\xda\xa6\xd4\xc9PTd\xc9\x82tl0\x81\x84\xec\xa9\xc4KM\x1a\xa7p\xc6\xcd%$\xb6\xc9\xcb\xff\xf3\x84\xc4\xea-D\r\xcc\x00\xc3\x0c\xdd,\xb2\x93mv\xd4nzQF\xa4\xdc\x9b\xd7\x9cc\xcd\x1b\xd7]zA\t6n3]\xe8\x18\x83\x93D\xb2\xc9\xb1\x03 \x9a\x1d\xc1\xed\x04\x10\x943\x0bN \xcc2\x19\xc9\xdc\xc0\xca\x88@\xfd\xfb\x15\x15\x07\xa6\xef\t\xfeb\x1a\xd7\xba\xdbQz\xfa~\xbe\x99\x05Bx\xd1t\xfb\x177\x87\xd41\x99\x90C-\xcf\xdc\xc3\xfc\xdbv!\xbc\xa2\x13\xcb\'\xf9w\x93\xf2\xe1?\xa6!\x92,\x9f\xe7\xdf\xb8\xcd\xba\xda3"I\xc394\xe1\x15L\x00p\x04\x802\x03\xb8\xbe\x18\xa3\x14\xbc\xb8\'N\x95\r\x19\x92\xca\xb5z}8\x9cN0 \xc4%N\xa00$\x12\n\x08\n)^\xa9*\xc8\xb3\x9e1\xffg6\xff\xf3\x84\xc4\xe8-\\%\xd4\x00\xc2L\xdd\xd8a\x02\x89V*\xac\x18s\n)\x0cgn9R\x95\xab/\x18\xe4\xa5\xab\xa5\x089\xd0\xa68\n\x10\xc2\x10\x13\x1b6\xaaQ\x8a3U\xb8\xa4\x80\x81c)E$\x91\x10\x92\xfb6\xaa\xba\xa9F3\xbaD\x90\x89O%$\x92]\x8f\xff\x9f\xa9{\x11 )2#\xfc\x88\x8aZ\xb1\x98\xea\xb7\x96_\xe4E ()\x9e\xa2\x88\xeb6\x10\xd8Ct)\x10\x14\xe1\x93\xe7O\x9d=l\xf1s\x94M\x8b3\x14\xb9I\x84\xebP\xb5\x95\x85LT\xc5P\x15\xdc\xc4\x9a\xf4<\xbb\xebY\xd6V\x98\x89"H\x92b{m9\x12A\xa8"\x04@\x88"%\x13\x8f\xbe\xa7&&$\x93##%\xcf|\xcc\xce\xd5\x95\xabV\xff\xf3\x84\xc4\xe4%\xf3\xc5\xd4\x00zF\xdd\xad[o\xaa\xd3\x13\x12H\x92$\x99\x19.{\xea\xca\xd5\xab\x97.]kO\xff\xbc\x9aD\x89\x125^H\x91\x05\x00\x80A\x82\x89%^d\xd3\x89\x12\xaa\xaf\xff\xfefH\x91"uo\x93H\x91\x05$H\x91*\xdf3UUU\xff\xff\xbc\xcc\x91"uWy4\x89\x12D\x89\x12\xaa\xfej\xaa\xaa\xbf\xff\xff32D\xe4\xaa\xbb\xc9\xa4I\x12$I*\xae\xf5UU[\xff\xff\xbc\xcc\x919*\xad\xef&\x92$H\x91*\x1aLAME3.100\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xff\xf3\x84\xc4\xff2<-\xb8\x00\xc3\x0c\xdd\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaaLAME3.100\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xff\xf3\x84\xc4L\x00\x00\x03H\x00\x00\x00\x00\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaaLAME3.100\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xff\xf3\x84\xc4L\x00\x00\x03H\x00\x00\x00\x00\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaaLAME3.100\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xff\xf3\x84\xc4L\x00\x00\x03H\x00\x00\x00\x00\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa\xaa'
+INFO: (API) (2024-06-28 16:09:27): Converted text to audio
+INFO: (API) (2024-06-28 16:11:36): Terminating server
+INFO: (API) (2024-06-28 16:11:40): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:11:40): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:11:40): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:11:40): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:11:40): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f26d9ff4390>
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Fri, 28 Jun 2024 16:11:39 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+INFO: (httpx) (2024-06-28 16:11:40): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 500 Internal Server Error"
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:11:40): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:11:40): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:11:40): close.complete
+INFO: (API) (2024-06-28 16:11:40): Response received: <Response [500 Internal Server Error]>
+DEBUG: (API) (2024-06-28 16:11:40): b'Internal Server Erro'
+INFO: (API) (2024-06-28 16:11:40): Converted text to audio
+INFO: (API) (2024-06-28 16:12:01): Terminating server
+INFO: (API) (2024-06-28 16:12:04): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:12:04): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:12:04): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:12:04): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:12:04): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f499f34ca50>
+DEBUG: (httpcore.http11) (2024-06-28 16:12:04): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:12:04): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:12:04): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:12:04): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:12:04): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:12:05): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:12:04 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:12:05): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:12:05): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:12:05): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:12:05): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:12:05): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:12:05): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:12:05): close.complete
+INFO: (API) (2024-06-28 16:12:05): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:12:05): b'\xff\xf3\x84\xc4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO: (API) (2024-06-28 16:12:05): Converted text to audio
+INFO: (API) (2024-06-28 16:13:28): Terminating server
+INFO: (API) (2024-06-28 16:13:31): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:13:31): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:13:31): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:13:31): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:13:31): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f9f385e8190>
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:13:31 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:13:31): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:13:31): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:13:31): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:13:31): close.complete
+INFO: (API) (2024-06-28 16:13:31): Response received: <Response [200 OK]>
+ERROR: (API) (2024-06-28 16:13:31): Error: 'NoneType' object has no attribute 'getvalue'
+INFO: (API) (2024-06-28 16:14:11): Terminating server
+INFO: (API) (2024-06-28 16:14:15): Sending text to gtts via http://0.0.0.0:8006/text/gtts/hello
+DEBUG: (httpx) (2024-06-28 16:14:15): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:14:15): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:14:15): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:14:15): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5777c8e910>
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:14:14 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:14:15): HTTP Request: POST http://0.0.0.0:8006/text/gtts/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:14:15): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:14:15): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:14:15): close.complete
+INFO: (API) (2024-06-28 16:14:15): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:14:15): b'\xff\xf3\x84\xc4\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+INFO: (API) (2024-06-28 16:14:15): Converted text to audio
+INFO: (API) (2024-06-28 16:15:01): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:15:01): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:15:01): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:15:01): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:15:01): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f5777bb65d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:15:01): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:15:01): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:15:01): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:15:01): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:15:01): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:15:02): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:15:00 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:15:02): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:15:02): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:15:02): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:15:02): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:15:02): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:15:02): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:15:02): close.complete
+INFO: (API) (2024-06-28 16:15:02): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:15:02): b'RIFF\xf6g\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:15:02): Converted text to audio
+INFO: (API) (2024-06-28 16:16:33): Terminating server
+INFO: (API) (2024-06-28 16:16:43): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:16:43): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:16:43): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:16:43): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:16:43): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f14a16ef010>
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:16:42 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:16:43): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:16:43): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:16:43): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:16:43): close.complete
+INFO: (API) (2024-06-28 16:16:43): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:16:43): b'RIFF\xf6g\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:16:43): Converted text to audio
+INFO: (API) (2024-06-28 16:17:31): Terminating server
+INFO: (API) (2024-06-28 16:17:41): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:17:41): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:17:41): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:17:41): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:17:41): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f0ce3d18d10>
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:17:41 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:17:41): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:17:41): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:17:41): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:17:41): close.complete
+INFO: (API) (2024-06-28 16:17:41): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:17:41): b'RIFF\x02h\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:17:41): Converted text to audio
+INFO: (API) (2024-06-28 16:20:01): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:20:01): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:20:01): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:20:01): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:20:01): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f0ce1d012d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:20:00 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:20:01): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:20:01): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:20:01): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:20:01): close.complete
+INFO: (API) (2024-06-28 16:20:01): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:20:01): b'RIFF\xf4g\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:20:01): Converted text to audio
+INFO: (API) (2024-06-28 16:22:25): Terminating server
+INFO: (API) (2024-06-28 16:22:33): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:22:33): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:22:33): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:22:33): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:22:33): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fe3aaddf8d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:22:32 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:22:33): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:22:33): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:22:33): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:22:33): close.complete
+INFO: (API) (2024-06-28 16:22:33): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:22:33): b'RIFF\xf6g\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:22:33): Converted text to audio
+ERROR: (API) (2024-06-28 16:22:33): Error: name 'io' is not defined
+INFO: (API) (2024-06-28 16:22:49): Terminating server
+INFO: (API) (2024-06-28 16:22:52): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello
+DEBUG: (httpx) (2024-06-28 16:22:52): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:22:52): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:22:52): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:22:52): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fa4c27c2cd0>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:22:51 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:22:52): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:22:52): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:22:52): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:22:52): close.complete
+INFO: (API) (2024-06-28 16:22:52): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:22:52): b'RIFF\x02h\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:22:52): Converted text to audio
+INFO: (API) (2024-06-28 16:23:53): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+DEBUG: (httpx) (2024-06-28 16:23:53): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:23:53): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:23:53): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:23:53): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fa4c1f1ef90>
+DEBUG: (httpcore.http11) (2024-06-28 16:23:53): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:23:53): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:23:53): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:23:53): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:23:53): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:23:54): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:23:53 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:23:54): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello%20Tom%20,how%20are%20you "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:23:54): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:23:54): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:23:54): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:23:54): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:23:54): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:23:54): close.complete
+INFO: (API) (2024-06-28 16:23:54): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:23:54): b'RIFF\x00\xc4\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:23:54): Converted text to audio
+INFO: (API) (2024-06-28 16:29:23): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+DEBUG: (httpx) (2024-06-28 16:29:23): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-28 16:29:23): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-28 16:29:23): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-28 16:29:23): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7fa4c1f2d8d0>
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:29:22 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx) (2024-06-28 16:29:23): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello%20Tom%20,how%20are%20you "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-28 16:29:23): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-28 16:29:23): close.started
+DEBUG: (httpcore.connection) (2024-06-28 16:29:23): close.complete
+INFO: (API) (2024-06-28 16:29:23): Response received: <Response [200 OK]>
+DEBUG: (API) (2024-06-28 16:29:23): b'RIFF(\xc4\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API) (2024-06-28 16:29:23): Converted text to audio
+INFO: (API) (2024-06-28 16:29:27): Terminating server
+INFO: (API) (2024-06-28 16:29:34): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+ERROR: (API) (2024-06-28 16:29:34): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 16:29:34): Response received: None
+INFO: (API) (2024-06-28 16:29:34): Unable to convert to audio
+INFO: (API) (2024-06-28 16:33:50): Terminating server
+INFO: (API) (2024-06-28 16:33:54): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+INFO: (API) (2024-06-28 16:33:54): Response received: b'Invalid HTTP request received.'
+ERROR: (API) (2024-06-28 16:33:54): Error: 'bytes' object has no attribute 'content'
+INFO: (API) (2024-06-28 16:36:12): Terminating server
+INFO: (API[speech]) (2024-06-28 16:36:15): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+INFO: (API[speech]) (2024-06-28 16:36:15): Response received: b'Invalid HTTP request received.'
+ERROR: (API[speech]) (2024-06-28 16:36:15): Error: 'bytes' object has no attribute 'content'
+INFO: (API[main]) (2024-06-28 16:38:48): Terminating server
+INFO: (API[speech]) (2024-06-28 16:38:56): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+INFO: (API[speech]) (2024-06-28 16:38:56): Response received: b'Invalid HTTP request received.'
+ERROR: (API[speech]) (2024-06-28 16:38:56): Error: 'bytes' object has no attribute 'content'
+INFO: (API[main]) (2024-06-28 16:40:26): Terminating server
+INFO: (API[speech]) (2024-06-28 16:40:33): Sending text to pyttsx3 via http://0.0.0.0:8006/text/pyttsx3/hello Tom ,how are you
+DEBUG: (httpx[load_ssl_context]) (2024-06-28 16:40:33): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx[load_ssl_context_verify]) (2024-06-28 16:40:33): load_verify_locations cafile='/home/headless/miniconda3/envs/project-api/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection[trace]) (2024-06-28 16:40:33): connect_tcp.started host='0.0.0.0' port=8006 local_address=None timeout=5.0 socket_options=None
+DEBUG: (httpcore.connection[trace]) (2024-06-28 16:40:33): connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7f81937e8850>
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): send_request_headers.complete
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): send_request_body.complete
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Fri, 28 Jun 2024 16:40:32 GMT'), (b'server', b'uvicorn'), (b'content-type', b'audio/wav'), (b'transfer-encoding', b'chunked')])
+INFO: (httpx[_send_single_request]) (2024-06-28 16:40:33): HTTP Request: POST http://0.0.0.0:8006/text/pyttsx3/hello%20Tom%20,how%20are%20you "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): receive_response_body.complete
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): response_closed.started
+DEBUG: (httpcore.http11[trace]) (2024-06-28 16:40:33): response_closed.complete
+DEBUG: (httpcore.connection[trace]) (2024-06-28 16:40:33): close.started
+DEBUG: (httpcore.connection[trace]) (2024-06-28 16:40:33): close.complete
+INFO: (API[speech]) (2024-06-28 16:40:33): Response received: <Response [200 OK]>
+DEBUG: (API[speech]) (2024-06-28 16:40:33): b'RIFF\x08\xc4\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (API[speech]) (2024-06-28 16:40:33): Converted text to audio
+INFO: (API[transcribe]) (2024-06-28 16:43:14): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:43:14): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:43:31): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:43:31): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:43:34): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:43:35): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:43:38): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:43:38): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:43:47): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:43:49): Unable to transcribe audio
+INFO: (API[main]) (2024-06-28 16:44:29): Terminating server
+INFO: (API[transcribe]) (2024-06-28 16:44:32): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[transcribe]) (2024-06-28 16:44:34): Unable to transcribe audio
+INFO: (API[main]) (2024-06-28 16:45:36): Terminating server
+INFO: (API[transcribe]) (2024-06-28 16:45:41): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[request]) (2024-06-28 16:45:43): Attempting to encode as UTF-8
+INFO: (API[transcribe]) (2024-06-28 16:45:43): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:47:16): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API[request]) (2024-06-28 16:47:18): Attempting to encode as UTF-8
+INFO: (API[transcribe]) (2024-06-28 16:47:18): Unable to transcribe audio
+INFO: (API[transcribe]) (2024-06-28 16:47:40): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API[request]) (2024-06-28 16:47:42): Attempting to encode as UTF-8
+INFO: (API[transcribe]) (2024-06-28 16:47:42): Unable to transcribe audio
+INFO: (API[main]) (2024-06-28 16:49:35): Terminating server
+INFO: (API[transcribe]) (2024-06-28 16:49:38): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API[request]) (2024-06-28 16:49:40): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:49:40): Response: who is the tallest man in the world
+INFO: (API[transcribe]) (2024-06-28 16:49:40): Transcribed data: b'"who is the tallest man in the world"'
+INFO: (API[transcribe]) (2024-06-28 16:49:57): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API[request]) (2024-06-28 16:50:01): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:50:01): Response: why do stars Sparkle and how big is the galaxy
+INFO: (API[transcribe]) (2024-06-28 16:50:01): Transcribed data: b'"why do stars Sparkle and how big is the galaxy"'
+INFO: (API[transcribe]) (2024-06-28 16:50:05): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API[request]) (2024-06-28 16:50:10): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:50:10): Response: let me tell you a story once I finish please continue the story for me the story is About A Boy Called Jack who went up a ladder what happened next
+INFO: (API[transcribe]) (2024-06-28 16:50:10): Transcribed data: b'"let me tell you a story once I finish please continue the story for me the story is About A Boy Called Jack who went up a ladder what happened next"'
+INFO: (API[transcribe]) (2024-06-28 16:50:18): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[request]) (2024-06-28 16:50:21): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:50:21): Response: 
+INFO: (API[transcribe]) (2024-06-28 16:50:21): Transcribed data: b'""'
+INFO: (API[transcribe]) (2024-06-28 16:50:42): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API[request]) (2024-06-28 16:50:44): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:50:44): Response: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API[transcribe]) (2024-06-28 16:50:44): Transcribed data: b'"what was wrong with my previous recording it looked like i did it completely okay"'
+DEBUG: (API[historyStore]) (2024-06-28 16:56:05): Model: gpt-4, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 16:56:06): {"model":"gpt-4", "messages":[{"role": "user", "content": "\"What is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 16:56:06): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API[request]) (2024-06-28 16:56:06): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:56:06): Response: True
+INFO: (API[query]) (2024-06-28 16:56:06): Model has been changed to gpt-4
+DEBUG: (API[query]) (2024-06-28 16:56:06): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 16:56:07): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 16:56:07): Response: {'id': 'chatcmpl-9f9BGlpblSvJc9ise5VeOlncoTO8x', 'object': 'chat.completion', 'created': 1719593766, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'The capital of Japan is Tokyo.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 34, 'completion_tokens': 7, 'total_tokens': 41}, 'system_fingerprint': None}
+ERROR: (API[query]) (2024-06-28 16:56:07): Error. The model may not have started: byte indices must be integers or slices, not str
+DEBUG: (API[historyStore]) (2024-06-28 16:56:07): Model: gpt-4, Max Tokens: 600, Role: system, Content: b'{\n  "id": "chatcmpl-9f9BGlpblSvJc9ise5VeOlncoTO8x",\n  "object": "chat.completion",\n  "created": 1719593766,\n  "model": "gpt-4-0613",\n  "choices": [\n    {\n      "index": 0,\n      "message": {\n        "role": "assistant",\n        "content": "The capital of Japan is Tokyo."\n      },\n      "logprobs": null,\n      "finish_reason": "stop"\n    }\n  ],\n  "usage": {\n    "prompt_tokens": 34,\n    "completion_tokens": 7,\n    "total_tokens": 41\n  },\n  "system_fingerprint": null\n}\n'
+DEBUG: (API[query]) (2024-06-28 16:56:07): Total time: 1.335240364074707
+INFO: (API[query]) (2024-06-28 16:56:07): Response: b'{\n  "id": "chatcmpl-9f9BGlpblSvJc9ise5VeOlncoTO8x",\n  "object": "chat.completion",\n  "created": 1719593766,\n  "model": "gpt-4-0613",\n  "choices": [\n    {\n      "index": 0,\n      "message": {\n        "role": "assistant",\n        "content": "The capital of Japan is Tokyo."\n      },\n      "logprobs": null,\n      "finish_reason": "stop"\n    }\n  ],\n  "usage": {\n    "prompt_tokens": 34,\n    "completion_tokens": 7,\n    "total_tokens": 41\n  },\n  "system_fingerprint": null\n}\n'
+DEBUG: (API[historyStore]) (2024-06-28 16:59:18): Model: gpt-4, Max Tokens: 600, Role: user, Content: Who is the fastest person in the world
+DEBUG: (API[historyStore]) (2024-06-28 16:59:53): Model: gpt-4, Max Tokens: 600, Role: user, Content: what is the capital of japan
+INFO: (API[main]) (2024-06-28 17:04:21): Terminating server
+DEBUG: (API[historyStore]) (2024-06-28 17:04:31): Model: gpt-4, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:04:31): {"model":"gpt-4", "messages":[{"role": "user", "content": "Who is the fastest person in the world"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:04:31): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API[request]) (2024-06-28 17:04:31): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:04:31): Response: True
+INFO: (API[query]) (2024-06-28 17:04:31): Model has been changed to gpt-4
+DEBUG: (API[query]) (2024-06-28 17:04:31): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:04:32): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:04:32): Response: {'id': 'chatcmpl-9f9JQM9LCeK0xyIh6X0b9FVIVvmup', 'object': 'chat.completion', 'created': 1719594272, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'The capital of Japan is Tokyo.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 35, 'completion_tokens': 7, 'total_tokens': 42}, 'system_fingerprint': None}
+DEBUG: (API[query]) (2024-06-28 17:04:32): Obtained response The capital of Japan is Tokyo. for prompt
+DEBUG: (API[historyStore]) (2024-06-28 17:04:32): Model: gpt-4, Max Tokens: 600, Role: system, Content: The capital of Japan is Tokyo.
+DEBUG: (API[query]) (2024-06-28 17:04:32): Total time: 1.1534206867218018
+INFO: (API[query]) (2024-06-28 17:04:32): Response: The capital of Japan is Tokyo.
+DEBUG: (API[historyStore]) (2024-06-28 17:05:19): Model: gpt-4, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:05:19): {"model":"gpt-4", "messages":[{"role": "user", "content": "Who is the fastest person in the world"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:05:19): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API[request]) (2024-06-28 17:05:19): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:05:19): Response: True
+INFO: (API[query]) (2024-06-28 17:05:19): Model has been changed to gpt-4
+DEBUG: (API[query]) (2024-06-28 17:05:19): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:05:20): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:05:20): Response: {'id': 'chatcmpl-9f9KCaNNbNwhbQmkk6uNSyCMXfcfD', 'object': 'chat.completion', 'created': 1719594320, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'The capital of Japan is Tokyo.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 56, 'completion_tokens': 7, 'total_tokens': 63}, 'system_fingerprint': None}
+DEBUG: (API[query]) (2024-06-28 17:05:20): Obtained response The capital of Japan is Tokyo. for prompt
+DEBUG: (API[historyStore]) (2024-06-28 17:05:20): Model: gpt-4, Max Tokens: 600, Role: system, Content: The capital of Japan is Tokyo.
+DEBUG: (API[query]) (2024-06-28 17:05:20): Total time: 1.1451363563537598
+INFO: (API[query]) (2024-06-28 17:05:20): Response: The capital of Japan is Tokyo.
+DEBUG: (API[historyStore]) (2024-06-28 17:07:56): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:07:56): {"model":"llama-small-high", "messages":[{"role": "user", "content": "Who is the fastest person in the world"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:07:56): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API[request]) (2024-06-28 17:07:56): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:07:56): Response: False
+INFO: (API[query]) (2024-06-28 17:07:56): Unable to change model to llama-small-high
+DEBUG: (API[query]) (2024-06-28 17:07:56): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:07:56): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:07:56): Response: {'error': {'message': 'The model `llama-small-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+ERROR: (API[query]) (2024-06-28 17:07:56): Error. The model may not have started: 'choices'
+DEBUG: (API[historyStore]) (2024-06-28 17:07:56): Model: llama-small-high, Max Tokens: 600, Role: system, Content: {'error': {'message': 'The model `llama-small-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+ERROR: (API[historyStore]) (2024-06-28 17:07:56): Storage into sqlite DB failed: Error binding parameter 4: type 'dict' is not supported
+DEBUG: (API[query]) (2024-06-28 17:07:56): Total time: 0.33582115173339844
+INFO: (API[query]) (2024-06-28 17:07:56): Response: {'error': {'message': 'The model `llama-small-high` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+DEBUG: (API[historyStore]) (2024-06-28 17:09:44): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:09:44): {"model":"llama-small-high", "messages":[{"role": "user", "content": "Who is the fastest person in the world"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": {"error": {"message": "The model `llama-small-high` does not exist or you do not have access to it.", "type": "invalid_request_error", "param": null, "code": "model_not_found"}}}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:09:44): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API[request]) (2024-06-28 17:09:44): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:09:44): Response: False
+INFO: (API[query]) (2024-06-28 17:09:44): Unable to change model to llama-small-high
+DEBUG: (API[query]) (2024-06-28 17:09:44): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:09:44): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:09:44): Contains binary data
+ERROR: (API[query]) (2024-06-28 17:09:44): Error. The model may not have started: byte indices must be integers or slices, not str
+DEBUG: (API[historyStore]) (2024-06-28 17:09:44): Model: llama-small-high, Max Tokens: 600, Role: system, Content: b''
+DEBUG: (API[query]) (2024-06-28 17:09:44): Total time: 0.3052663803100586
+INFO: (API[query]) (2024-06-28 17:09:44): Response: b''
+DEBUG: (API[historyStore]) (2024-06-28 17:09:59): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:09:59): {"model":"llama-small-high", "messages":[{"role": "user", "content": "Who is the fastest person in the world"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": "The capital of Japan is Tokyo."}, {"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": {"error": {"message": "The model `llama-small-high` does not exist or you do not have access to it.", "type": "invalid_request_error", "param": null, "code": "model_not_found"}}}, {"role": "user", "content": "what is the capital of japan"}, {"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:09:59): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API[request]) (2024-06-28 17:09:59): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:09:59): Response: False
+INFO: (API[query]) (2024-06-28 17:09:59): Unable to change model to llama-small-high
+DEBUG: (API[query]) (2024-06-28 17:09:59): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:09:59): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:09:59): Contains binary data
+ERROR: (API[query]) (2024-06-28 17:09:59): Error. The model may not have started: byte indices must be integers or slices, not str
+DEBUG: (API[historyStore]) (2024-06-28 17:09:59): Model: llama-small-high, Max Tokens: 600, Role: system, Content: b'All connection attempts failed'
+DEBUG: (API[query]) (2024-06-28 17:09:59): Total time: 0.04903602600097656
+INFO: (API[query]) (2024-06-28 17:09:59): Response: b'All connection attempts failed'
+DEBUG: (API[historyStore]) (2024-06-28 17:10:40): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[historyStore]) (2024-06-28 17:10:57): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+INFO: (API[main]) (2024-06-28 17:11:13): Terminating server
+DEBUG: (API[historyStore]) (2024-06-28 17:11:19): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+INFO: (API[main]) (2024-06-28 17:14:34): Terminating server
+ERROR: (API[historyLoad]) (2024-06-28 17:14:36): Unable to retreive conversation history: no such table: history
+DEBUG: (API[historyStore]) (2024-06-28 17:14:50): Model: llama-small-high, Max Tokens: 600, Role: user, Content: what is the capital of japan
+DEBUG: (API[query]) (2024-06-28 17:14:50): {"model":"llama-small-high", "messages":[{"role": "user", "content": "what is the capital of japan"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 17:14:50): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API[request]) (2024-06-28 17:15:05): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:15:05): Response: True
+INFO: (API[query]) (2024-06-28 17:15:05): Model has been changed to llama-small-high
+DEBUG: (API[query]) (2024-06-28 17:15:05): Sending prompt what is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 17:15:06): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 17:15:06): Response: {'id': 'chatcmpl-1e068094-3914-4d75-906c-6998221cbe4e', 'object': 'chat.completion', 'created': 1719594906, 'model': 'llama-small-high', 'choices': [{'index': 0, 'message': {'content': ' Tokyo is the capital city of Japan.', 'role': 'assistant'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 52, 'completion_tokens': 8, 'total_tokens': 60}}
+DEBUG: (API[query]) (2024-06-28 17:15:06): Obtained response  Tokyo is the capital city of Japan. for prompt
+DEBUG: (API[historyStore]) (2024-06-28 17:15:06): Model: llama-small-high, Max Tokens: 600, Role: system, Content:  Tokyo is the capital city of Japan.
+DEBUG: (API[query]) (2024-06-28 17:15:06): Total time: 16.00853657722473
+INFO: (API[query]) (2024-06-28 17:15:06): Response:  Tokyo is the capital city of Japan.
+INFO: (API[main]) (2024-06-28 17:17:13): Terminating server

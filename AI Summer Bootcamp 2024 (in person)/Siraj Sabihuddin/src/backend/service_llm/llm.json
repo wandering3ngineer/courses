@@ -1,16 +1,16 @@
 {
     "model": [
         {
-            "name": "llama-2-7b-chat.Q5_K_M",
+            "name": "llama-medium-high",
             "file": "./models/llama-2-7b-chat.Q5_K_M.gguf",
             "host": "0.0.0.0",
             "port": "8004",
             "key": "dummy access key:dummy secret key",
             "auth": "sso-key",
-            "pid": null
+            "pid": 48930
         },
         {
-            "name": "mistral-7b-openorca.gguf2.Q4_0",
+            "name": "mistral-large-high",
             "file": "./models/mistral-7b-openorca.gguf2.Q4_0.gguf",
             "host": "0.0.0.0",
             "port": "8004",
@@ -19,7 +19,7 @@
             "pid": null
         },
         {
-            "name": "mistral-7b-v0.1.Q2_K",
+            "name": "mistral-large-low",
             "file": "./models/mistral-7b-v0.1.Q2_K.gguf",
             "host": "0.0.0.0",
             "port": "8004",
@@ -28,7 +28,7 @@
             "pid": null
         },
         {
-            "name": "tinyllama-1.1b-1t-openorca.Q6_K",
+            "name": "llama-small-high",
             "file": "./models/tinyllama-1.1b-1t-openorca.Q6_K.gguf",
             "host": "0.0.0.0",
             "port": "8004",
@@ -41,7 +41,7 @@
             "file": null,
             "host": "api.openai.com",
             "port": "443",
-            "key": "*****",
+            "key": "******",
             "auth": "Bearer",
             "pid": null
         }
@@ -49,7 +49,7 @@
     "api": {
         "host": "0.0.0.0",
         "port": "8003",
-        "model": "llama-2-7b-chat.Q5_K_M",
-        "pid": null
+        "model": "llama-medium-high",
+        "pid": 48931
     }
 }

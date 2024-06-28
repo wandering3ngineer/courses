@@ -237,3 +237,48 @@ DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module 
 DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
 DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.toc".
 DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (STT) (2024-06-28 16:43:14): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:43:14): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:43:21): Terminating server
+DEBUG: (STT) (2024-06-28 16:43:31): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:43:31): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 16:43:34): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:43:35): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 16:43:38): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:43:38): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 16:43:47): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:43:47): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:43:49): Results: {'result': [{'conf': 1.0, 'end': 0.66, 'start': 0.24, 'word': 'who'}, {'conf': 1.0, 'end': 0.93, 'start': 0.69, 'word': 'is'}, {'conf': 1.0, 'end': 1.11, 'start': 0.93, 'word': 'the'}, {'conf': 1.0, 'end': 1.83, 'start': 1.11, 'word': 'tallest'}, {'conf': 1.0, 'end': 2.25, 'start': 1.89, 'word': 'man'}, {'conf': 0.977538, 'end': 2.34, 'start': 2.25, 'word': 'in'}, {'conf': 1.0, 'end': 2.46, 'start': 2.340545, 'word': 'the'}, {'conf': 1.0, 'end': 2.97, 'start': 2.46, 'word': 'world'}], 'text': 'who is the tallest man in the world'}
+INFO: (STT) (2024-06-28 16:43:49): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:44:32): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:44:32): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:44:34): Results: {'result': [{'conf': 1.0, 'end': 0.66, 'start': 0.24, 'word': 'who'}, {'conf': 1.0, 'end': 0.93, 'start': 0.69, 'word': 'is'}, {'conf': 1.0, 'end': 1.11, 'start': 0.93, 'word': 'the'}, {'conf': 1.0, 'end': 1.83, 'start': 1.11, 'word': 'tallest'}, {'conf': 1.0, 'end': 2.25, 'start': 1.89, 'word': 'man'}, {'conf': 0.977572, 'end': 2.34, 'start': 2.25, 'word': 'in'}, {'conf': 1.0, 'end': 2.46, 'start': 2.340544, 'word': 'the'}, {'conf': 1.0, 'end': 2.97, 'start': 2.46, 'word': 'world'}], 'text': 'who is the tallest man in the world'}
+INFO: (STT) (2024-06-28 16:44:34): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:45:41): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:45:41): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:45:43): Results: {'result': [{'conf': 1.0, 'end': 0.66, 'start': 0.24, 'word': 'who'}, {'conf': 1.0, 'end': 0.93, 'start': 0.69, 'word': 'is'}, {'conf': 1.0, 'end': 1.11, 'start': 0.93, 'word': 'the'}, {'conf': 1.0, 'end': 1.83, 'start': 1.11, 'word': 'tallest'}, {'conf': 1.0, 'end': 2.25, 'start': 1.89, 'word': 'man'}, {'conf': 0.977482, 'end': 2.34, 'start': 2.25, 'word': 'in'}, {'conf': 1.0, 'end': 2.46, 'start': 2.340546, 'word': 'the'}, {'conf': 1.0, 'end': 2.97, 'start': 2.46, 'word': 'world'}], 'text': 'who is the tallest man in the world'}
+INFO: (STT) (2024-06-28 16:45:43): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:47:16): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 16:47:16): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:47:18): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:47:40): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 16:47:40): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:47:42): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:49:38): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 16:49:38): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:49:40): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 16:49:57): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 16:49:57): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:50:01): why do stars Sparkle and how big is the galaxy
+DEBUG: (STT) (2024-06-28 16:50:05): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 16:50:05): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:50:10): let me tell you a story once I finish please continue the story for me the story is About A Boy Called Jack who went up a ladder what happened next
+DEBUG: (STT) (2024-06-28 16:50:18): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:50:18): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 16:50:21): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 16:50:21): 
+DEBUG: (STT) (2024-06-28 16:50:42): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 16:50:42): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 16:50:44): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.33, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.74, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.77, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.250374, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 0.979719, 'end': 3.81, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.139879, 'start': 3.81, 'word': 'like'}, {'conf': 0.993468, 'end': 4.38, 'start': 4.17, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.380196, 'word': 'did'}, {'conf': 1.0, 'end': 4.86, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.91357, 'end': 6.09, 'start': 5.610235, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+INFO: (STT) (2024-06-28 16:50:44): what was wrong with my previous recording it looked like i did it completely okay
+INFO: (STT) (2024-06-28 17:17:17): Terminating server

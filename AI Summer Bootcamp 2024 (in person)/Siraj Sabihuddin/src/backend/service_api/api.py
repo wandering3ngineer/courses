@@ -14,6 +14,7 @@ Date:
 # IMPORTS
 #-----------------------------------------------------------------------
 from fastapi import FastAPI, Request
+from fastapi.responses import StreamingResponse
 import sqlite3
 import json
 import uvicorn
@@ -22,6 +23,7 @@ from io import BytesIO
 import pycurl
 import time
 import logging
+import httpx
 
 #-----------------------------------------------------------------------
 # LOGGER CONFIG
@@ -30,7 +32,7 @@ logging.basicConfig(
     # Set the logging level to DEBUG
     level=logging.DEBUG,         
     # Define the log message format
-    format='%(levelname)s: (%(name)s) (%(asctime)s): %(message)s',
+    format='%(levelname)s: (%(name)s[%(funcName)s]) (%(asctime)s): %(message)s',
     # Define the date format 
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
@@ -63,8 +65,8 @@ config_file = 'api.json'
 #-----------------------------------------------------------------------
 # SPEECH
 #-----------------------------------------------------------------------
-@app.get("/speech/{model}/{text}")
-async def transcribe(model, text):
+@app.post("/speech/{model}/{text}")
+async def speech(model, text):
     '''
     Sends text data to service for TTS. The service generates
     a speech audio byte buffer object. This can then be saved
@@ -81,9 +83,51 @@ async def transcribe(model, text):
             The text data to convert into audio 
 
     Returns:
-        response : BytesIO = 
-            The byte stream to use
+        response : StreamingResponse = 
+            The response object for the audio data 
     '''
+    global config
+
+    # Create the endpoint for RESTful request
+    api_endpoint_text='http://'+ config["tts_host"] + ':' + config["tts_port"] + '/text/' + model + "/" + text
+
+    # Empty response by default
+    response = None
+
+    # We are going to try to connect to our STT service
+    try:
+        # Call the llm api to change model
+        logger.info (f"Sending text to {model} via {api_endpoint_text}")
+        response = httpx.post(api_endpoint_text)
+        #response = request(url=api_endpoint_text, data=None, method="POST", contenttype="Content-Type: application/text")
+
+        logger.info (f"Response received: {response}")
+
+        # Check that the request has been completed successfully
+        if (response):
+            # Grab the audio_bytes from the response
+            audio_bytes = BytesIO(response.content)
+            
+            # Debugging by looking at the contents of the response to 
+            # make sure that it has been transmitted correctly
+            logger.debug(audio_bytes.getvalue()[:20])
+
+            # Confirming conversion
+            logger.info (f"Converted text to audio")
+
+            # Create the response object
+            response =StreamingResponse(BytesIO(audio_bytes.getvalue()), media_type="audio/wav")
+        else:
+            logger.info (f"Unable to convert to audio")
+            response = None
+
+    except Exception as e:
+        # Print an error indicating that there is a problem sending
+        # the curl request
+        logger.error(f"Error: {e}")
+
+    # Send transcribed response data 
+    return response
 
 #-----------------------------------------------------------------------
 # TRANSCRIBE
@@ -112,8 +156,7 @@ async def transcribe(model, req : Request):
 
     # Create the endpoint for RESTful request
     api_endpoint_audio='http://'+ config["stt_host"] + ':' + config["stt_port"] + '/audio/' + model
-    print(api_endpoint_audio)
-
+    
     # Pull together the request body json
     audio_data = await req.body()
 
@@ -124,7 +167,8 @@ async def transcribe(model, req : Request):
     try:
         # Call the llm api to change model
         logger.info (f"Sending audio to {model} via {api_endpoint_audio}")
-        response = request(url=api_endpoint_audio, data=audio_data, method="POST", contenttype="Content-Type: application/octet-stream")
+        #response = httpx.post(api_endpoint_audio)
+        response=request(url=api_endpoint_audio, data=audio_data, method="POST", contenttype="Content-Type: application/octet-stream")
 
         # Check that the request has been completed successfully
         if (response): 
@@ -363,8 +407,16 @@ def request(url, data, method, contenttype):
         # Get the HTTP response status code
         http_response_code = crl.getinfo(pycurl.HTTP_CODE)
 
-        # Get and print the response body
-        response_body = json.loads(buffer.getvalue().decode('utf-8'))
+        # Check if the response is JSON and decode it
+        try:
+            logger.info ("Attempting to encode as UTF-8")
+            response = json.loads(buffer.getvalue().decode('utf-8'))
+            logger.info (f"Response: {response}")
+        except json.JSONDecodeError:
+            logger.info ("Contains binary data")
+            # If decoding fails, return the raw bytes
+            response = buffer.getvalue()
+
 
         # Resets the pycurl instance for next request
         crl.reset()
@@ -376,8 +428,6 @@ def request(url, data, method, contenttype):
         buffer.flush()
         buffer.seek(0)
 
-        # Return the response
-        response = response_body
         return response
 
     except Exception as e:

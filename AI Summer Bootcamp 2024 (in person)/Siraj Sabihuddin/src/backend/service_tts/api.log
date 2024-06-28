@@ -1,0 +1,6 @@
+INFO: (TTS[main]) (2024-06-28 16:40:29): Terminating server
+DEBUG: (pydub.converter[log_conversion]) (2024-06-28 16:40:33): subprocess.call(['ffmpeg', '-y', '-f', 'wav', '-i', '/tmp/tmpszlor9cx.wav', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+DEBUG: (TTS[text]) (2024-06-28 16:40:33): Model: pyttsx3, Text: hello Tom ,how are you
+DEBUG: (TTS[text]) (2024-06-28 16:40:33): Returning audio stream
+DEBUG: (TTS[text]) (2024-06-28 16:40:33): b'RIFF\x08\xc4\x00\x00WAVEfmt \x10\x00\x00\x00'
+INFO: (TTS[main]) (2024-06-28 17:17:06): Terminating server

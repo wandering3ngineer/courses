@@ -34,12 +34,12 @@ logging.basicConfig(
     # Set the logging level to DEBUG
     level=logging.DEBUG,         
     # Define the log message format
-    format='%(levelname)s: (%(name)s) (%(asctime)s): %(message)s',
+    format='%(levelname)s: (%(name)s[%(funcName)s]) (%(asctime)s): %(message)s',
     # Define the date format 
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
         # Log messages to a file
-        logging.FileHandler('llm.log'),
+        logging.FileHandler('api.log'),
         # Log messages to the console
         logging.StreamHandler()  
     ]

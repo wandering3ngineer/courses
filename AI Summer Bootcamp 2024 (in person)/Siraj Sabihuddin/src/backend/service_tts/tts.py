@@ -14,7 +14,7 @@ Date:
 #-----------------------------------------------------------------------
 # IMPORTS
 #-----------------------------------------------------------------------
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
 from fastapi.responses import StreamingResponse
 import json
 import os
@@ -25,6 +25,7 @@ from gtts import gTTS
 from pydub import AudioSegment
 import pyttsx3
 import logging
+import tempfile
 
 #-----------------------------------------------------------------------
 # LOGGER CONFIG
@@ -33,12 +34,12 @@ logging.basicConfig(
     # Set the logging level to DEBUG
     level=logging.DEBUG,         
     # Define the log message format
-    format='%(levelname)s: (%(name)s) (%(asctime)s): %(message)s',
+    format='%(levelname)s: (%(name)s[%(funcName)s]) (%(asctime)s): %(message)s',
     # Define the date format 
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
         # Log messages to a file
-        logging.FileHandler('tts.log'),
+        logging.FileHandler('api.log'),
         # Log messages to the console
         logging.StreamHandler()  
     ]
@@ -88,10 +89,15 @@ async def text(model, text):
     # Run the text to speech conversion 
     audio_bytes = speech(text,model)
 
+    logger.debug(f"Model: {model}, Text: {text}")
+
     if (audio_bytes):
+        logger.debug('Returning audio stream')
+        logger.debug(audio_bytes.getvalue()[:20])
         # This is used by fast api for streaming back large chunks of data. It 
         # allows for better memory management than sending back a response
         # that is just the direct audio_bytes buffer. 
+        #return Response(content=audio_bytes.getvalue(), media_type="audio/wav")
         return StreamingResponse(io.BytesIO(audio_bytes.getvalue()), media_type="audio/wav")
     else:
         return None
@@ -122,10 +128,11 @@ def speech(text, model, language='en', accent='uk'):
             - uk: British
 
     Return:
-        audio_bytes: io.BytesIO = 
+        audio_bytes: io.BytesIO =
             A byte stream binary object representing the audio 
             data produced.
     '''
+ 
     try:
         # provide a data structure containing 
         # a mapping for various regional accents
@@ -173,15 +180,19 @@ def speech(text, model, language='en', accent='uk'):
                 if ac[model][language][accent] in str(voice.name):
                     pyttsx.setProperty('voice', voice.id)
 
-            temp_filename = 'tts.wav'
-            pyttsx.save_to_file(text, temp_filename)
-            pyttsx.runAndWait()
-            pyttsx.stop()
+            with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_wav:
+                temp_filename = temp_wav.name
+                pyttsx.save_to_file(text, temp_filename)
+                pyttsx.runAndWait()
+                pyttsx.stop()
 
+            # Ensure the file is closed before reading
             wav_audio = AudioSegment.from_file(temp_filename, format="wav")
             wav_audio.export(audio_buffer, format="wav")
             audio_buffer.seek(0)
 
+            # Clean up the temporary file
+            os.remove(temp_filename)
         return audio_buffer
 
     except Exception as e:
