@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.1">
+<title>api API documentation</title>
+<meta name="description" content="Contains code that unifies api calls for all other services: LLM, STT and
+TTS. Basically it receives requests from the browser or frontend and then
+…">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>api</code></h1>
+</header>
+<section id="section-intro">
+<p>Contains code that unifies api calls for all other services: LLM, STT and
+TTS. Basically it receives requests from the browser or frontend and then
+routes them to the individual microservices. These then appropriately
+respond. The responses are then routed to the frontend. </p>
+<p>Author:
+Siraj Sabihuddin</p>
+<p>Date:
+June 28, 2024</p>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="api.configLoad"><code class="name flex">
+<span>def <span class="ident">configLoad</span></span>(<span>config_file)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Grab the stored config data in the config file</p>
+<h2 id="args">Args</h2>
+<p>config_file : str =
+The path to the JSON config file
+Returns: <br>
+config : dict =
+Json dictionary of values from json file</p>
+<pre><code>model_index : int = 
+    The index of the active model
+</code></pre></div>
+</dd>
+<dt id="api.configStore"><code class="name flex">
+<span>def <span class="ident">configStore</span></span>(<span>config_file, config_data)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Store the updated config data in the config file</p>
+<h2 id="args">Args</h2>
+<p>config_file : str =
+The path to the JSON config file</p>
+<p>config : dict =
+The updated dictionary of configuration
+data</p></div>
+</dd>
+<dt id="api.historyClear"><code class="name flex">
+<span>async def <span class="ident">historyClear</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function clears the database history table and any variables
+that are acting to store this history </p>
+<h2 id="route">Route</h2>
+<p>@app.get("/history/clear")</p>
+<h2 id="return">Return</h2>
+<p>value : bool
+True if succesfully completed</p></div>
+</dd>
+<dt id="api.historyList"><code class="name flex">
+<span>async def <span class="ident">historyList</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a list of user and system responses as stored since
+queries have been taking place. These provide context for the LLM
+to appropriately respond into the future. </p>
+<h2 id="route">Route</h2>
+<p>@app.get("/history/list")</p>
+<h2 id="return">Return</h2>
+<p>history : list of dict =
+A list of dict in the form of
+[{'user': 'some message'}, {'system': 'some message'}]</p></div>
+</dd>
+<dt id="api.historyLoad"><code class="name flex">
+<span>def <span class="ident">historyLoad</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Loads the data from the history table in the storage database.
+This history table is used to provide context if the user has
+been having an on-going conversation with the model</p></div>
+</dd>
+<dt id="api.historyStore"><code class="name flex">
+<span>def <span class="ident">historyStore</span></span>(<span>model, max_tokens, role, content)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Adds a record of the history to the sqlite database on the api
+server. This can then be retrieved by the user as needed through
+an API call. If no history table or database exists, then one
+is created. This created database should have a history table
+containing two columns: role and content indexed sequentially
+by the order in which the history was recorded. </p>
+<h2 id="args">Args</h2>
+<p>model : str =
+The name of the model being used. </p>
+<p>role : str =
+The role of the message. Could be either user or system</p>
+<p>content : str =
+The content of the message as a sting. </p>
+<p>max_tokens : int =
+The number of available tokens for response used
+in this message</p></div>
+</dd>
+<dt id="api.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This is the main function. It grabs the config data, historical data
+for the conversation and stores it in a set of globals. The web
+server is then run and operates until the user uses a keyboard interrupt
+to break the execution.</p></div>
+</dd>
+<dt id="api.query"><code class="name flex">
+<span>async def <span class="ident">query</span></span>(<span>prompt, model)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sends text from given request file to an LLM model of your choice (internal or external).
+A key is used to access the model if needed. The resulting response of the LLM is stored.
+In the case of local internal models, if the local model is not running an error is thrown.
+Before this function is called with a local model, that local model should be run using the
+run() function. </p>
+<h2 id="route">Route</h2>
+<p>@app.get("/query/{model}/{prompt}")</p>
+<h2 id="args">Args</h2>
+<p>prompt : str =
+The input query text</p>
+<p>model : str =
+The model to use. If the the model is a local model specify
+the path to the local model</p>
+<p>key : str =
+The API key if needed.</p>
+<p>host : str =
+The url end point to the API location relevant to querying the model</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>response </code></dt>
+<dd>str =
+The string response to the query</dd>
+</dl></div>
+</dd>
+<dt id="api.request"><code class="name flex">
+<span>def <span class="ident">request</span></span>(<span>url, data, method, contenttype)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function creates a http request to the particular url endpoint
+with request body as in the data variable</p>
+<h2 id="args">Args</h2>
+<p>url : str =
+The endpoint url for the request </p>
+<p>data : str
+The json request body </p>
+<p>method : str
+The method to use for the request
+e.g. POST, GET, PUT etc.</p>
+<p>contenttype : str =
+String of format: "Content-Type: application/json" or
+similar.
+Returns
+response : str =
+The json response body. If no response body
+returns None</p></div>
+</dd>
+<dt id="api.run"><code class="name flex">
+<span>def <span class="ident">run</span></span>(<span>host, port)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function should be called to start the server side api microservice
+for the backend. </p>
+<h2 id="args">Args</h2>
+<p>host : str =
+The host ip address passed in as a string</p>
+<p>port : str =
+The host port passed in as a string </p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>process </code></dt>
+<dd>Popen =
+Returns an instance of the process in case we need to kill later.</dd>
+</dl></div>
+</dd>
+<dt id="api.tokensMax"><code class="name flex">
+<span>async def <span class="ident">tokensMax</span></span>(<span>tokens=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This function sets the maximum number of allowed tokens to be
+returned by the model. Note that this is not persistent.
+So there is no change to the original configuration file</p>
+<h2 id="routes">Routes</h2>
+<p>@app.get("/tokens/max")</p>
+<p>@app.get("/tokens/max/{tokens}")</p>
+<h2 id="args">Args</h2>
+<p>tokens : int =
+The maximum number of allowed tokens to be used
+by the model. This is an optiona argument.
+If no value is given then return the number of
+tokens</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>response </code></dt>
+<dd>bool or int =
+Returns true if successfully set, otherwise returns
+false. Alternaatively returns number of tokens
+if no tokens given.</dd>
+</dl></div>
+</dd>
+<dt id="api.transcribe"><code class="name flex">
+<span>async def <span class="ident">transcribe</span></span>(<span>model, req: starlette.requests.Request)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sends audio data in request body to service that transcribes it
+into text and receives the text back</p>
+<h2 id="route">Route</h2>
+<p>@app.get("/transcribe/{model}")</p>
+<h2 id="args">Args</h2>
+<p>model : str =
+The model to use for the speech to text converstion</p>
+<p>request : Request =
+The request body containing the audio data. </p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>response </code></dt>
+<dd>str =
+The string containing the transcribed text</dd>
+</dl></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="api.configLoad" href="#api.configLoad">configLoad</a></code></li>
+<li><code><a title="api.configStore" href="#api.configStore">configStore</a></code></li>
+<li><code><a title="api.historyClear" href="#api.historyClear">historyClear</a></code></li>
+<li><code><a title="api.historyList" href="#api.historyList">historyList</a></code></li>
+<li><code><a title="api.historyLoad" href="#api.historyLoad">historyLoad</a></code></li>
+<li><code><a title="api.historyStore" href="#api.historyStore">historyStore</a></code></li>
+<li><code><a title="api.main" href="#api.main">main</a></code></li>
+<li><code><a title="api.query" href="#api.query">query</a></code></li>
+<li><code><a title="api.request" href="#api.request">request</a></code></li>
+<li><code><a title="api.run" href="#api.run">run</a></code></li>
+<li><code><a title="api.tokensMax" href="#api.tokensMax">tokensMax</a></code></li>
+<li><code><a title="api.transcribe" href="#api.transcribe">transcribe</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.1</a>.</p>
+</footer>
+</body>
+</html>
