@@ -1,19 +1,25 @@
 {
     "model": [
         {
-            "name": "vosk-model-small-en-us-0.15",
-            "file": "./models/vosk-model-small-en-us-0.15",
-            "host": "0.0.0.0",
-            "port": "8005",
-            "key": "dummy access key:dummy secret key",
-            "auth": "sso-key",
-            "pid": 45836
-        }
+            "name": "vosk-small",
+            "file": "./models/vosk-model-small-en-us-0.15"
+        },
+        {
+            "name": "vosk-large",
+            "file": "./models/vosk-model-en-us-0.22"
+        },
+        {
+            "name": "vosk-lgraph",
+            "file": "./models/vosk-model-en-us-daanzu-20200905-lgraph"
+        },
+        {
+            "name": "google-sr",
+            "file": null
+        }        
     ],
+    
     "api": {
         "host": "0.0.0.0",
-        "port": "8003",
-        "model": "llama-2-7b-chat.Q5_K_M",
-        "pid": 45472
+        "port": "8005"
     }
 }

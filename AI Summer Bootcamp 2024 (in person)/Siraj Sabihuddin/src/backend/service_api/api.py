@@ -1,7 +1,19 @@
+'''
+Contains code that unifies api calls for all other services: LLM, STT and
+TTS. Basically it receives requests from the browser or frontend and then
+routes them to the individual microservices. These then appropriately
+respond. The responses are then routed to the frontend. 
+
+Author: 
+    Siraj Sabihuddin
+
+Date: 
+    June 28, 2024
+'''
 #-----------------------------------------------------------------------
 # IMPORTS
 #-----------------------------------------------------------------------
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 import sqlite3
 import json
 import uvicorn
@@ -46,6 +58,87 @@ app = FastAPI()
 # variables that will not persist. If they crash 
 history = []
 confg = []
+config_file = 'api.json'
+
+#-----------------------------------------------------------------------
+# SPEECH
+#-----------------------------------------------------------------------
+@app.get("/speech/{model}/{text}")
+async def transcribe(model, text):
+    '''
+    Sends text data to service for TTS. The service generates
+    a speech audio byte buffer object. This can then be saved
+    into an audio file for playback
+
+    Route:
+        @app.get("/speech/{model}/{text}")
+
+    Args:
+        model : str = 
+            The model to use for the text to speech converstion
+
+        text : str = 
+            The text data to convert into audio 
+
+    Returns:
+        response : BytesIO = 
+            The byte stream to use
+    '''
+
+#-----------------------------------------------------------------------
+# TRANSCRIBE
+#-----------------------------------------------------------------------
+@app.get("/transcribe/{model}")
+async def transcribe(model, req : Request):
+    '''
+    Sends audio data in request body to service that transcribes it
+    into text and receives the text back
+
+    Route:
+        @app.get("/transcribe/{model}")
+
+    Args:
+        model : str = 
+            The model to use for the speech to text converstion
+
+        request : Request = 
+            The request body containing the audio data. 
+
+    Returns:
+        response : str = 
+            The string containing the transcribed text
+    '''
+    global config
+
+    # Create the endpoint for RESTful request
+    api_endpoint_audio='http://'+ config["stt_host"] + ':' + config["stt_port"] + '/audio/' + model
+    print(api_endpoint_audio)
+
+    # Pull together the request body json
+    audio_data = await req.body()
+
+    # Response is empty by default
+    response = ""
+
+    # We are going to try to connect to our STT service
+    try:
+        # Call the llm api to change model
+        logger.info (f"Sending audio to {model} via {api_endpoint_audio}")
+        response = request(url=api_endpoint_audio, data=audio_data, method="POST", contenttype="Content-Type: application/octet-stream")
+
+        # Check that the request has been completed successfully
+        if (response): 
+            logger.info (f"Transcribed data: {response}")
+        else:
+            logger.info (f"Unable to transcribe audio")
+
+    except Exception as e:
+        # Print an error indicating that there is a problem sending
+        # the curl request
+        logger.error(f"Error: {e}")
+
+    # Send transcribed response data 
+    return response
 
 #-----------------------------------------------------------------------
 # QUERY
@@ -59,22 +152,25 @@ async def query(prompt, model):
     Before this function is called with a local model, that local model should be run using the 
     run() function. 
 
-    query : str
-        A query that is structured as a JSON as follows
+    Route:
+        @app.get("/query/{model}/{prompt}")
 
     Args:
-        prompt : str
+        prompt : str = 
             The input query text
-        model : str
+
+        model : str = 
             The model to use. If the the model is a local model specify 
             the path to the local model
-        key : str
-            The API key if needed. 
-        host : str
+
+        key : str = 
+            The API key if needed.
+
+        host : str = 
             The url end point to the API location relevant to querying the model
     
     Returns:
-        response : str
+        response : str = 
             The string response to the query
     '''
     # Load the global variable
@@ -132,9 +228,7 @@ async def query(prompt, model):
     try:
         # Call the llm api to change model
         logger.info (f"Changing model to {model} via {api_endpoint_model}")
-        response = request(url=api_endpoint_model, data=json_data_model, method="PUT")
-
-        # Note that changing the model takes time. 
+        response = request(url=api_endpoint_model, data=json_data_model, method="PUT", contenttype="Content-Type: application/json")
 
         # Check that the request has been completed successfully
         if (response): 
@@ -144,7 +238,7 @@ async def query(prompt, model):
 
         # Call the llm api to make a request to the model selected
         logger.debug (f"Sending prompt {prompt} via {api_endpoint_query}")
-        response = request(api_endpoint_query, data=json_data_query, method="POST")
+        response = request(api_endpoint_query, data=json_data_query, method="POST", contenttype="Content-Type: application/json")
 
         # Extract the summary from the OpenAI API response. The response should be
         # in the following format
@@ -175,7 +269,7 @@ async def query(prompt, model):
     except Exception as e:
         # Print an error indicating that there is a problem sending
         # the curl request
-        logger.error("Error: " + str(e))
+        logger.error("Error. The model may not have started: " + str(e))
 
     if (response):
         # Append the most recent prompt to the conversation history
@@ -199,27 +293,34 @@ async def query(prompt, model):
 #-----------------------------------------------------------------------
 # REQUEST
 #-----------------------------------------------------------------------
-def request(url, data, method):
+def request(url, data, method, contenttype):
     '''
     This function creates a http request to the particular url endpoint 
     with request body as in the data variable
 
     Args:
-        url : str
+        url : str = 
             The endpoint url for the request 
+
         data : str
             The json request body 
-        method : 
+
+        method : str
             The method to use for the request
-            e.g. POST, GET, PUT etc. 
+            e.g. POST, GET, PUT etc.
+
+        contenttype : str =
+            String of format: "Content-Type: application/json" or 
+            similar. 
+
     Returns
-        response : str
+        response : str = 
             The json response body. If no response body
             returns None
     '''
-    # Construct the cURL header from my keys
+    # Construct the cURL for specifying meme type
     httpheader=[
-        "Content-Type: application/json"
+        contenttype
     ]
 
     try:
@@ -298,13 +399,16 @@ def historyStore (model, max_tokens, role, content):
     by the order in which the history was recorded. 
 
     Args:
-        model : str
+        model : str = 
             The name of the model being used. 
-        role : str
+
+        role : str = 
             The role of the message. Could be either user or system
-        content : str
+
+        content : str = 
             The content of the message as a sting. 
-        max_tokens : int
+            
+        max_tokens : int = 
             The number of available tokens for response used
             in this message
     '''
@@ -406,6 +510,13 @@ async def historyClear ():
     '''
     This function clears the database history table and any variables
     that are acting to store this history 
+
+    Route:
+        @app.get("/history/clear")
+
+    Return:
+        value : bool
+            True if succesfully completed
     '''
     # Bring local into global scope
     global config, history
@@ -438,6 +549,19 @@ async def historyClear ():
 #-----------------------------------------------------------------------
 @app.get("/history/list")
 async def historyList ():
+    '''
+    Returns a list of user and system responses as stored since 
+    queries have been taking place. These provide context for the LLM
+    to appropriately respond into the future. 
+
+    Route:
+        @app.get("/history/list")
+
+    Return:
+        history : list of dict = 
+            A list of dict in the form of 
+            [{'user': 'some message'}, {'system': 'some message'}]
+    '''
     # Bring in global variables
     global history
 
@@ -447,31 +571,93 @@ async def historyList ():
 #-----------------------------------------------------------------------
 # TOKENSMAX
 #-----------------------------------------------------------------------
+@app.get("/tokens/max")
 @app.get("/tokens/max/{tokens}")
-async def tokensMax (tokens):
+async def tokensMax (tokens=None):  
     '''
     This function sets the maximum number of allowed tokens to be
     returned by the model. Note that this is not persistent. 
     So there is no change to the original configuration file
 
+    Routes:
+        @app.get("/tokens/max")
+
+        @app.get("/tokens/max/{tokens}")
+
     Args:
-        tokens : int
+        tokens : int = 
             The maximum number of allowed tokens to be used 
-            by the model
+            by the model. This is an optiona argument. 
+            If no value is given then return the number of
+            tokens
     
     Returns:
-        response : bool
+        response : bool or int = 
             Returns true if successfully set, otherwise returns
-            false
+            false. Alternaatively returns number of tokens
+            if no tokens given. 
     '''
-    global config
+    global config, config_file
     
-    # Set the max_tokens for the current model.
-    config['llm_maxtokens']=tokens
+    # Sets the number of max tokens in the config file
+    # and for subsequent queries to llm
+    if (tokens):
+        # Set the max_tokens for the current model.
+        config['llm_maxtokens']=tokens
+        
+        # Store the updated config into file
+        configStore(config_file, config)
+
+        return True
+
+    # Returns the number of max tokens set in the
+    # configuration file
+    else:
+        return config['llm_maxtokens']
+
+#-----------------------------------------------------------------------
+# CONFIGLOAD
+#-----------------------------------------------------------------------
+def configLoad(config_file):
+    '''
+    Grab the stored config data in the config file
+
+    Args:
+        config_file : str = 
+            The path to the JSON config file
+
+    Returns:   
+        config : dict = 
+            Json dictionary of values from json file
+
+        model_index : int = 
+            The index of the active model
+    '''
+    # Load the configuration file to get running parameters
+    with open(config_file, 'r') as json_file:
+        config = json.load(json_file)
     
+    # Return dictionary
+    return config
+
+#-----------------------------------------------------------------------
+# CONFIGSTORE
+#-----------------------------------------------------------------------
+def configStore (config_file, config_data):
+    '''
+    Store the updated config data in the config file
+
+    Args:
+        config_file : str = 
+            The path to the JSON config file
+        
+        config : dict = 
+            The updated dictionary of configuration
+            data
+    '''
     # Store the updated config into file
-    with open("api.json", 'w') as json_file:
-        json.dump(config, json_file, indent=4)
+    with open(config_file, 'w') as json_file:
+        json.dump(config_data, json_file, indent=4)
 
 #-----------------------------------------------------------------------
 # RUN
@@ -482,13 +668,14 @@ def run(host, port):
     for the backend. 
 
     Args:
-        host : str
+        host : str = 
             The host ip address passed in as a string
-        port : str
+
+        port : str = 
             The host port passed in as a string 
 
     Returns:
-        process : Subprocess.Popen
+        process : Popen = 
             Returns an instance of the process in case we need to kill later.
     '''
     uvicorn.run(app, host=host, port=int(port), log_level="info")   
@@ -503,11 +690,10 @@ def main():
     server is then run and operates until the user uses a keyboard interrupt
     to break the execution. 
     '''
-    global config
+    global config, config_file
 
     # Load the configuration fille to get running parameters
-    with open("api.json") as json_file:
-        config = json.load(json_file)
+    config=configLoad(config_file)
     
     # Load the table of conversation histories from the 
     # SQLite database

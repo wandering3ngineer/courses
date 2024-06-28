@@ -1,0 +1,16 @@
+{
+    "model": [
+        {
+            "name": "pyttsx3",
+            "file": null
+        },
+        {
+            "name": "gtts",
+            "file": null
+        }        
+    ],
+    "api": {
+        "host": "0.0.0.0",
+        "port": "8006"
+    }
+}

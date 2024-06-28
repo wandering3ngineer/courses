@@ -1,0 +1,213 @@
+DEBUG: (API) (2024-06-27 20:01:40): Model: gpt-4, Max Tokens: 100, Role: user, Content: "How many countries have there been since the beginning of history
+DEBUG: (API) (2024-06-27 20:01:40): {"model":"gpt-4", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}], "max_tokens":100}
+INFO: (API) (2024-06-27 20:01:40): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API) (2024-06-27 20:01:40): Model has been changed to gpt-4
+DEBUG: (API) (2024-06-27 20:01:40): Sending prompt "How many countries have there been since the beginning of history via http://0.0.0.0:8003/relay/v1/chat/completions
+DEBUG: (API) (2024-06-27 20:01:44): Obtained response This is difficult to quantify accurately due to varying definitions of a "country," changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation. for prompt
+DEBUG: (API) (2024-06-27 20:01:44): Model: gpt-4, Max Tokens: 100, Role: system, Content: This is difficult to quantify accurately due to varying definitions of a "country," changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation.
+DEBUG: (API) (2024-06-27 20:01:44): Total time: 4.69156551361084
+INFO: (API) (2024-06-27 20:01:44): Response: This is difficult to quantify accurately due to varying definitions of a "country," changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation.
+INFO: (API) (2024-06-27 20:05:48): Terminating server
+INFO: (API) (2024-06-27 20:13:00): Terminating server
+DEBUG: (API) (2024-06-27 20:13:59): Model: gpt-4, Max Tokens: 200, Role: user, Content: "Can you provide some example python code
+DEBUG: (API) (2024-06-27 20:13:59): {"model":"gpt-4", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}, {"role": "system", "content": "This is difficult to quantify accurately due to varying definitions of a \"country,\" changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation."}, {"role": "user", "content": "\"Can you provide some example python code"}], "max_tokens":200}
+INFO: (API) (2024-06-27 20:13:59): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API) (2024-06-27 20:13:59): Model has been changed to gpt-4
+DEBUG: (API) (2024-06-27 20:13:59): Sending prompt "Can you provide some example python code via http://0.0.0.0:8003/relay/v1/chat/completions
+DEBUG: (API) (2024-06-27 20:14:05): Obtained response Sure, here is a simple Python program that prints "Hello, World!" to the console:
+
+```python
+print("Hello, World!")
+```
+
+And here's a slightly more complex one, which defines a function to calculate the factorial of a number:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = 5
+print("The factorial of", num, "is", factorial(num))
+```
+
+Would you like examples of anything specific in Python? for prompt
+DEBUG: (API) (2024-06-27 20:14:05): Model: gpt-4, Max Tokens: 200, Role: system, Content: Sure, here is a simple Python program that prints "Hello, World!" to the console:
+
+```python
+print("Hello, World!")
+```
+
+And here's a slightly more complex one, which defines a function to calculate the factorial of a number:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = 5
+print("The factorial of", num, "is", factorial(num))
+```
+
+Would you like examples of anything specific in Python?
+DEBUG: (API) (2024-06-27 20:14:05): Total time: 6.074488639831543
+INFO: (API) (2024-06-27 20:14:05): Response: Sure, here is a simple Python program that prints "Hello, World!" to the console:
+
+```python
+print("Hello, World!")
+```
+
+And here's a slightly more complex one, which defines a function to calculate the factorial of a number:
+
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+num = 5
+print("The factorial of", num, "is", factorial(num))
+```
+
+Would you like examples of anything specific in Python?
+INFO: (API) (2024-06-27 20:17:45): Terminating server
+DEBUG: (API) (2024-06-27 20:18:06): Model: llama-small-high, Max Tokens: 200, Role: user, Content: "How many countries in the world
+DEBUG: (API) (2024-06-27 20:18:06): {"model":"llama-small-high", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}, {"role": "system", "content": "This is difficult to quantify accurately due to varying definitions of a \"country,\" changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation."}, {"role": "user", "content": "\"Can you provide some example python code"}, {"role": "system", "content": "Sure, here is a simple Python program that prints \"Hello, World!\" to the console:\n\n```python\nprint(\"Hello, World!\")\n```\n\nAnd here's a slightly more complex one, which defines a function to calculate the factorial of a number:\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nnum = 5\nprint(\"The factorial of\", num, \"is\", factorial(num))\n```\n\nWould you like examples of anything specific in Python?"}, {"role": "user", "content": "\"How many countries in the world"}], "max_tokens":200}
+INFO: (API) (2024-06-27 20:18:06): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API) (2024-06-27 20:18:16): Model has been changed to llama-small-high
+DEBUG: (API) (2024-06-27 20:18:16): Sending prompt "How many countries in the world via http://0.0.0.0:8003/relay/v1/chat/completions
+DEBUG: (API) (2024-06-27 20:18:24): Obtained response  To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states.
+
+In the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories. for prompt
+DEBUG: (API) (2024-06-27 20:18:24): Model: llama-small-high, Max Tokens: 200, Role: system, Content:  To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states.
+
+In the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories.
+DEBUG: (API) (2024-06-27 20:18:24): Total time: 18.134557008743286
+INFO: (API) (2024-06-27 20:18:24): Response:  To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 "countries" throughout history, taking into account ancient civilizations, empires, and modern nation-states.
+
+In the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories.
+DEBUG: (API) (2024-06-27 20:19:10): Model: llama-medium-high, Max Tokens: 200, Role: user, Content: "Which countries survived the longest"
+DEBUG: (API) (2024-06-27 20:19:10): {"model":"llama-medium-high", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}, {"role": "system", "content": "This is difficult to quantify accurately due to varying definitions of a \"country,\" changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation."}, {"role": "user", "content": "\"Can you provide some example python code"}, {"role": "system", "content": "Sure, here is a simple Python program that prints \"Hello, World!\" to the console:\n\n```python\nprint(\"Hello, World!\")\n```\n\nAnd here's a slightly more complex one, which defines a function to calculate the factorial of a number:\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nnum = 5\nprint(\"The factorial of\", num, \"is\", factorial(num))\n```\n\nWould you like examples of anything specific in Python?"}, {"role": "user", "content": "\"How many countries in the world"}, {"role": "system", "content": " To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states.\n\nIn the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories."}, {"role": "user", "content": "\"Which countries survived the longest\""}], "max_tokens":200}
+INFO: (API) (2024-06-27 20:19:10): Changing model to llama-medium-high via http://0.0.0.0:8003/model/llama-medium-high
+INFO: (API) (2024-06-27 20:19:20): Model has been changed to llama-medium-high
+DEBUG: (API) (2024-06-27 20:19:20): Sending prompt "Which countries survived the longest" via http://0.0.0.0:8003/relay/v1/chat/completions
+ERROR: (API) (2024-06-27 20:19:20): Request error: Expecting value: line 1 column 1 (char 0)
+ERROR: (API) (2024-06-27 20:19:20): Error: 'NoneType' object is not subscriptable
+DEBUG: (API) (2024-06-27 20:19:20): Model: llama-medium-high, Max Tokens: 200, Role: system, Content: None
+ERROR: (API) (2024-06-27 20:19:20): Storage into sqlite DB failed: NOT NULL constraint failed: history.content
+DEBUG: (API) (2024-06-27 20:19:20): Total time: 10.400420904159546
+INFO: (API) (2024-06-27 20:19:20): Response: None
+DEBUG: (API) (2024-06-27 20:19:30): Model: llama-medium-high, Max Tokens: 200, Role: user, Content: "Which countries survived the longest"
+DEBUG: (API) (2024-06-27 20:19:30): {"model":"llama-medium-high", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}, {"role": "system", "content": "This is difficult to quantify accurately due to varying definitions of a \"country,\" changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation."}, {"role": "user", "content": "\"Can you provide some example python code"}, {"role": "system", "content": "Sure, here is a simple Python program that prints \"Hello, World!\" to the console:\n\n```python\nprint(\"Hello, World!\")\n```\n\nAnd here's a slightly more complex one, which defines a function to calculate the factorial of a number:\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nnum = 5\nprint(\"The factorial of\", num, \"is\", factorial(num))\n```\n\nWould you like examples of anything specific in Python?"}, {"role": "user", "content": "\"How many countries in the world"}, {"role": "system", "content": " To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states.\n\nIn the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories."}, {"role": "user", "content": "\"Which countries survived the longest\""}, {"role": "user", "content": "\"Which countries survived the longest\""}], "max_tokens":200}
+INFO: (API) (2024-06-27 20:19:30): Changing model to llama-medium-high via http://0.0.0.0:8003/model/llama-medium-high
+INFO: (API) (2024-06-27 20:19:30): Model has been changed to llama-medium-high
+DEBUG: (API) (2024-06-27 20:19:30): Sending prompt "Which countries survived the longest" via http://0.0.0.0:8003/relay/v1/chat/completions
+ERROR: (API) (2024-06-27 20:34:30): Request error: Expecting value: line 1 column 1 (char 0)
+ERROR: (API) (2024-06-27 20:34:30): Error: 'NoneType' object is not subscriptable
+DEBUG: (API) (2024-06-27 20:34:30): Model: llama-medium-high, Max Tokens: 200, Role: system, Content: None
+ERROR: (API) (2024-06-27 20:34:30): Storage into sqlite DB failed: NOT NULL constraint failed: history.content
+DEBUG: (API) (2024-06-27 20:34:30): Total time: 900.2033109664917
+INFO: (API) (2024-06-27 20:34:30): Response: None
+DEBUG: (API) (2024-06-27 20:41:02): Model: llama-small-high, Max Tokens: 200, Role: user, Content: "Which countries survived the longest"
+DEBUG: (API) (2024-06-27 20:41:02): {"model":"llama-small-high", "messages":[{"role": "user", "content": "\"How many countries have there been since the beginning of history"}, {"role": "system", "content": "This is difficult to quantify accurately due to varying definitions of a \"country,\" changes in territories, and differences in historical record-keeping. However, some estimates suggest there may have been around 1800 to 2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states. Note that these estimates could include various forms of political entities, and may not align with our current understanding of a sovereign nation."}, {"role": "user", "content": "\"Can you provide some example python code"}, {"role": "system", "content": "Sure, here is a simple Python program that prints \"Hello, World!\" to the console:\n\n```python\nprint(\"Hello, World!\")\n```\n\nAnd here's a slightly more complex one, which defines a function to calculate the factorial of a number:\n\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nnum = 5\nprint(\"The factorial of\", num, \"is\", factorial(num))\n```\n\nWould you like examples of anything specific in Python?"}, {"role": "user", "content": "\"How many countries in the world"}, {"role": "system", "content": " To provide an accurate count of countries, we would need specific data like their population, area, and history to make reliable comparisons. However, estimates suggest there may have been around 1800-2000 \"countries\" throughout history, taking into account ancient civilizations, empires, and modern nation-states.\n\nIn the United Nations' World Statesmen database, a total of 239 countries are listed as countries with diplomatic relations, although these data are often outdated due to various factors like political instability, natural disasters, or changes in territories."}, {"role": "user", "content": "\"Which countries survived the longest\""}, {"role": "user", "content": "\"Which countries survived the longest\""}, {"role": "user", "content": "\"Which countries survived the longest\""}], "max_tokens":200}
+INFO: (API) (2024-06-27 20:41:02): Changing model to llama-small-high via http://0.0.0.0:8003/model/llama-small-high
+INFO: (API) (2024-06-27 20:41:12): Model has been changed to llama-small-high
+DEBUG: (API) (2024-06-27 20:41:12): Sending prompt "Which countries survived the longest" via http://0.0.0.0:8003/relay/v1/chat/completions
+DEBUG: (API) (2024-06-27 20:41:18): Obtained response  There are approximately 100,000 countries in the world. However, it's crucial to note that this number may change as new nations and territories form or dissolve over time. Additionally, there could be additional countries due to factors such as geographical expansion or territorial disputes. for prompt
+DEBUG: (API) (2024-06-27 20:41:18): Model: llama-small-high, Max Tokens: 200, Role: system, Content:  There are approximately 100,000 countries in the world. However, it's crucial to note that this number may change as new nations and territories form or dissolve over time. Additionally, there could be additional countries due to factors such as geographical expansion or territorial disputes.
+DEBUG: (API) (2024-06-27 20:41:18): Total time: 16.864793300628662
+INFO: (API) (2024-06-27 20:41:18): Response:  There are approximately 100,000 countries in the world. However, it's crucial to note that this number may change as new nations and territories form or dissolve over time. Additionally, there could be additional countries due to factors such as geographical expansion or territorial disputes.
+INFO: (API) (2024-06-27 21:16:39): Terminating server
+ERROR: (API) (2024-06-27 21:16:41): Unable to retreive conversation history: name 'config' is not defined
+DEBUG: (API) (2024-06-27 21:17:36): Model: gpt-4, Max Tokens: 200, Role: user, Content: "What is the capital of japan
+DEBUG: (API) (2024-06-27 21:17:36): {"model":"gpt-4", "messages":[{"role": "user", "content": "\"What is the capital of japan"}], "max_tokens":200}
+INFO: (API) (2024-06-27 21:17:36): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API) (2024-06-27 21:17:37): Model has been changed to gpt-4
+DEBUG: (API) (2024-06-27 21:17:37): Sending prompt "What is the capital of japan via http://0.0.0.0:8003/relay/v1/chat/completions
+DEBUG: (API) (2024-06-27 21:17:39): Obtained response The capital of Japan is Tokyo. for prompt
+DEBUG: (API) (2024-06-27 21:17:39): Model: gpt-4, Max Tokens: 200, Role: system, Content: The capital of Japan is Tokyo.
+DEBUG: (API) (2024-06-27 21:17:39): Total time: 2.0569674968719482
+INFO: (API) (2024-06-27 21:17:39): Response: The capital of Japan is Tokyo.
+INFO: (API) (2024-06-27 21:43:53): Terminating server
+INFO: (API) (2024-06-28 01:57:15): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+ERROR: (API) (2024-06-28 01:57:15): Error: 'Request' object is not callable
+INFO: (API) (2024-06-28 01:58:50): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+ERROR: (API) (2024-06-28 01:58:50): Error: 'Request' object is not callable
+INFO: (API) (2024-06-28 01:59:12): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+ERROR: (API) (2024-06-28 01:59:12): Error: 'Request' object is not callable
+INFO: (API) (2024-06-28 02:03:06): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+ERROR: (API) (2024-06-28 02:03:06): Error: 'Request' object is not callable
+INFO: (API) (2024-06-28 02:03:16): Terminating server
+INFO: (API) (2024-06-28 02:03:21): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+ERROR: (API) (2024-06-28 02:03:21): Error: 'Request' object is not callable
+INFO: (API) (2024-06-28 02:05:21): Terminating server
+INFO: (API) (2024-06-28 02:05:30): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API) (2024-06-28 02:05:30): Transcribed data: {'detail': 'Method Not Allowed'}
+INFO: (API) (2024-06-28 02:06:12): Terminating server
+INFO: (API) (2024-06-28 02:06:20): Sending audio to google-sr via http://0.0.0.0:8005/audio/google-sr
+INFO: (API) (2024-06-28 02:06:21): Transcribed data: what is the fastest way from Toronto to Paris
+INFO: (API) (2024-06-28 02:06:49): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:06:50): Transcribed data: what is the fastest way from toronto to paris
+INFO: (API) (2024-06-28 02:06:56): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:06:57): Transcribed data: who is the tallest man in the world
+INFO: (API) (2024-06-28 02:07:02): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:07:04): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:17:55): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:17:56): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:18:21): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:18:23): Transcribed data: what is the fastest way from toronto to paris
+INFO: (API) (2024-06-28 02:22:09): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:22:11): Transcribed data: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API) (2024-06-28 02:23:02): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+ERROR: (API) (2024-06-28 02:23:03): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 02:23:03): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:23:29): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:23:31): Transcribed data: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API) (2024-06-28 02:25:32): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:25:34): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:26:40): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:26:42): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:27:07): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:27:08): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:27:39): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:27:40): Transcribed data: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API) (2024-06-28 02:30:38): Terminating server
+INFO: (API) (2024-06-28 02:30:49): Sending audio to vosk-small via http://0.0.0.0:8005/audio/vosk-small
+INFO: (API) (2024-06-28 02:30:51): Transcribed data: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API) (2024-06-28 02:30:59): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API) (2024-06-28 02:31:02): Transcribed data: what was wrong with my previous recording it looked like i did it completely okay
+INFO: (API) (2024-06-28 02:31:50): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API) (2024-06-28 02:31:53): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:31:59): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API) (2024-06-28 02:32:01): Transcribed data: why do stars sparkle and how big is the galaxy
+INFO: (API) (2024-06-28 02:32:10): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API) (2024-06-28 02:32:14): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:32:22): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+ERROR: (API) (2024-06-28 02:32:22): Request error: Expecting value: line 1 column 1 (char 0)
+INFO: (API) (2024-06-28 02:32:22): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:32:32): Sending audio to vosk-lgraph via http://0.0.0.0:8005/audio/vosk-lgraph
+INFO: (API) (2024-06-28 02:32:36): Unable to transcribe audio
+INFO: (API) (2024-06-28 02:33:52): Terminating server
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:48:06): Successfully loaded extension "markdown.extensions.toc.TocExtension".

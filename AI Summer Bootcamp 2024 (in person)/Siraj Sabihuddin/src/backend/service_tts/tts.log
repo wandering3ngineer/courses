@@ -1,0 +1,311 @@
+ERROR: (TTS) (2024-06-28 03:24:15): Failed to generate audio response: libespeak.so.1: cannot open shared object file: No such file or directory
+INFO: (TTS) (2024-06-28 03:25:13): Terminating server
+ERROR: (TTS) (2024-06-28 03:25:20): Failed to generate audio response: libespeak.so.1: cannot open shared object file: No such file or directory
+INFO: (TTS) (2024-06-28 03:26:13): Terminating server
+ERROR: (TTS) (2024-06-28 03:26:20): Failed to generate audio response: libespeak.so.1: cannot open shared object file: No such file or directory
+INFO: (TTS) (2024-06-28 03:27:07): Terminating server
+DEBUG: (pydub.converter) (2024-06-28 03:27:43): subprocess.call(['ffmpeg', '-y', '-f', 'wav', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+ERROR: (TTS) (2024-06-28 03:27:43): Failed to generate audio response: Decoding failed. ffmpeg returned error code: 1
+
+Output from ffmpeg/avlib:
+
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[wav @ 0x55aa602b2e40] invalid start code [0][0][0][0] in RIFF header
+[cache @ 0x55aa602b3ac0] Statistics, cache hits:0 cache misses:0
+cache:pipe:0: Invalid data found when processing input
+
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): text: hello
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): tld: co.uk
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): lang: en
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): slow: False
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): lang_check: True
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): pre_processor_funcs: [<function tone_marks at 0x7f8738aeee80>, <function end_of_line at 0x7f8738b00040>, <function abbreviations at 0x7f8738b000e0>, <function word_sub at 0x7f8738b00180>]
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): tokenizer_func: <bound method Tokenizer.run of re.compile('(?<=\\?).|(?<=!).|(?<=？).|(?<=！).|(?<!\\.[a-z])\\. |(?<!\\.[a-z]), |(?<!\\d):|…|،|—|¿|¡|\\)|;|。|：|\\[|\\\n|‥|、|，|\\]|\\(', re.IGNORECASE) from: [<function tone_marks at 0x7f8738b00400>, <function period_comma at 0x7f8738b004a0>, <function colon at 0x7f8738b00540>, <function other_punctuation at 0x7f8738b005e0>]>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): timeout: None
+DEBUG: (gtts.lang) (2024-06-28 03:30:16): langs: {'af': 'Afrikaans', 'ar': 'Arabic', 'bg': 'Bulgarian', 'bn': 'Bengali', 'bs': 'Bosnian', 'ca': 'Catalan', 'cs': 'Czech', 'da': 'Danish', 'de': 'German', 'el': 'Greek', 'en': 'English', 'es': 'Spanish', 'et': 'Estonian', 'fi': 'Finnish', 'fr': 'French', 'gu': 'Gujarati', 'hi': 'Hindi', 'hr': 'Croatian', 'hu': 'Hungarian', 'id': 'Indonesian', 'is': 'Icelandic', 'it': 'Italian', 'iw': 'Hebrew', 'ja': 'Japanese', 'jw': 'Javanese', 'km': 'Khmer', 'kn': 'Kannada', 'ko': 'Korean', 'la': 'Latin', 'lv': 'Latvian', 'ml': 'Malayalam', 'mr': 'Marathi', 'ms': 'Malay', 'my': 'Myanmar (Burmese)', 'ne': 'Nepali', 'nl': 'Dutch', 'no': 'Norwegian', 'pl': 'Polish', 'pt': 'Portuguese', 'ro': 'Romanian', 'ru': 'Russian', 'si': 'Sinhala', 'sk': 'Slovak', 'sq': 'Albanian', 'sr': 'Serbian', 'su': 'Sundanese', 'sv': 'Swedish', 'sw': 'Swahili', 'ta': 'Tamil', 'te': 'Telugu', 'th': 'Thai', 'tl': 'Filipino', 'tr': 'Turkish', 'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese', 'zh-CN': 'Chinese (Simplified)', 'zh-TW': 'Chinese (Mandarin/Taiwan)', 'zh': 'Chinese (Mandarin)'}
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): pre-processing: <function tone_marks at 0x7f8738aeee80>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): pre-processing: <function end_of_line at 0x7f8738b00040>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): pre-processing: <function abbreviations at 0x7f8738b000e0>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): pre-processing: <function word_sub at 0x7f8738b00180>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): text_parts: ['hello']
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): text_parts: 1
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): data-0: f.req=%5B%5B%5B%22jQ1olc%22%2C%22%5B%5C%22hello%5C%22%2C%5C%22en%5C%22%2Cnull%2C%5C%22null%5C%22%5D%22%2Cnull%2C%22generic%22%5D%5D%5D&
+DEBUG: (urllib3.connectionpool) (2024-06-28 03:30:16): Starting new HTTPS connection (1): translate.google.co.uk:443
+DEBUG: (urllib3.connectionpool) (2024-06-28 03:30:16): https://translate.google.co.uk:443 "POST /_/TranslateWebserverUi/data/batchexecute HTTP/11" 200 None
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): headers-0: {'Referer': 'http://translate.google.com/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8', 'Content-Length': '135'}
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): url-0: https://translate.google.co.uk/_/TranslateWebserverUi/data/batchexecute
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): status-0: 200
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): part-0 written to <_io.BytesIO object at 0x7f8738a54090>
+DEBUG: (gtts.tts) (2024-06-28 03:30:16): part-0 created
+INFO: (TTS) (2024-06-28 03:55:00): Terminating server
+ERROR: (TTS) (2024-06-28 03:55:25): Failed to generate audio response: [Errno 2] No such file or directory: 'temp.wav'
+INFO: (TTS) (2024-06-28 03:57:50): Terminating server
+DEBUG: (pydub.converter) (2024-06-28 03:57:57): subprocess.call(['ffmpeg', '-y', '-f', 'wav', '-i', 'temp.wav', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (TTS) (2024-06-28 03:57:57): Failed to generate audio response: name 'os' is not defined
+INFO: (TTS) (2024-06-28 03:58:17): Terminating server
+INFO: (TTS) (2024-06-28 03:58:32): Terminating server
+DEBUG: (pydub.converter) (2024-06-28 03:58:47): subprocess.call(['ffmpeg', '-y', '-f', 'wav', '-i', 'temp.wav', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (TTS) (2024-06-28 03:59:41): Terminating server
+INFO: (TTS) (2024-06-28 04:13:42): Terminating server
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:14:16): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:19:17): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:20:49): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:21:43): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:04): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:22:27): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:23:03): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:24:25): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:19): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:26:43): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:04): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:27:31): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:28:00): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:30:22): Successfully loaded extension "markdown.extensions.toc.TocExtension".

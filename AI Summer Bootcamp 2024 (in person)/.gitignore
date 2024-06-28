@@ -3,5 +3,6 @@ design/
 build/
 dist/
 keys/
+audio/
 __pycache__/
 *.tar

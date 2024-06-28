@@ -1,3 +1,18 @@
+'''
+Contains code for starting and executing various LLMs. On the front
+side this code will wait for RESTful requests and then restart
+the relevant private LLMs or stop them and use an external LLM such
+as openai's gpt-4. To support queries of these individual LLM processes
+the code relays requests coming from external source as is if the 
+appropriate relay endpoint is provided. It relies on the fact that
+all models use openai's RESTful api format.  
+
+Author: 
+    Siraj Sabihuddin
+
+Date: 
+    June 28, 2024
+'''
 #-----------------------------------------------------------------------
 # IMPORTS
 #-----------------------------------------------------------------------
@@ -56,8 +71,11 @@ async def model(model):
     requires that the existing model is stopped and a new model is 
     restarted on the server
 
+    Route: 
+        @app.put("/model/{model}")
+
     Args:
-        model : str
+        model : str = 
             The model name to change to. Note that valid model
             names are located in the config file
     '''
@@ -95,7 +113,7 @@ async def model(model):
                     config['model'][i]['pid']=run_llm(model=config['model'][i]['file'], host=config['model'][i]['host'], port=config['model'][i]['port'], pid=config['model'][i]['pid'])
                     
                     # Notice that changing the model takes time so delay until it is started
-                    time.sleep(10)
+                    time.sleep(15)
 
                 # update the config to indicate that the active model has changed
                 config['api']['model']=model
@@ -117,14 +135,18 @@ async def relay(request: Request, path: str):
     This function acts as a relay. Basically any request sent to the endpoint
     will be relayed on to either a public or private LLM. 
 
+    Route:
+        @app.api_route("/relay/{path:path}", methods=["GET", "POST", "PUT", "DELETE", "PATCH"])
+
     Args:
-        path : str
-            The path after the host:port name 
-        request : Request
+        path : str =
+            The path after the host:port name
+
+        request : Request = 
             The fastAPI Request object
 
     Returns:
-        response : Response
+        response : Response = 
             The FastAPI response object
     '''
     async with httpx.AsyncClient(timeout=900.0) as client:
@@ -189,19 +211,22 @@ def run_llm(model, host, port, pid=None):
     The API format is the OpenAI API format 
 
     Args:
-        model : str 
+        model : str = 
             The path to the LLM model of interest to us. 
             This should be a .gguf model file. 
-        host : str
+
+        host : str = 
             The host ip address passed in as a string
-        port : str
+
+        port : str = 
             The host port passed in as a string  
-        pid : int
+
+        pid : int = 
             The pid to existing process
             if it exists
 
     Returns:
-        pid : int
+        pid : int = 
             Process pid for allowing termination from outside
             the run command
     '''
@@ -262,16 +287,18 @@ def run_api(host, port, pid=None):
     private model or to call an external model such as that of openai 
 
     Args:
-        host : str
+        host : str = 
             The host ip address passed in as a string
-        port : str
+
+        port : str = 
             The host port passed in as a string  
-        pid : int
+
+        pid : int = 
             The pid to existing process
             if it exists
     
     Returns:
-        pid : int
+        pid : int = 
             Process pid for allowing termination from outside
             the run command
     '''
@@ -323,13 +350,14 @@ def configLoad(config_file):
     Grab the stored config data in the config file
 
     Args:
-        config_file : str
+        config_file : str = 
             The path to the JSON config file
 
     Returns:   
-        config : dict
+        config : dict = 
             Json dictionary of values from json file
-        model_index : int
+
+        model_index : int = 
             The index of the active model
     '''
     # Load the configuration fille to get running parameters
@@ -352,10 +380,10 @@ def configStore (config_file, config):
     Store the updated config data in the config file
 
     Args:
-        config_file : str
+        config_file : str = 
             The path to the JSON config file
         
-        config : dict
+        config : dict = 
             The updated dictionary of configuration
             data
     '''
@@ -372,7 +400,7 @@ def terminate (config, model=True, api=True):
     the configuration to reflect the new pid values of null
 
     Args:
-        config : dict
+        config : dict = 
             The path to the JSON config file
     '''   
     # Kill all model processes

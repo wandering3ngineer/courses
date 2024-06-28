@@ -1,0 +1,143 @@
+INFO: (LLM) (2024-06-27 19:59:09): Start a new LLM process: ['python', '-m', 'llama_cpp.server', '--model', './models/llama-2-7b-chat.Q5_K_M.gguf', '--host', '0.0.0.0', '--port', '8004', '--chat_format', 'chatml', '--verbose', 'False']
+INFO: (LLM) (2024-06-27 19:59:09): PID of Started LLM Process: 8383
+INFO: (LLM) (2024-06-27 19:59:09): Start a new API process ['uvicorn', 'llm:app', '--host', '0.0.0.0', '--port', '8003']
+INFO: (LLM) (2024-06-27 19:59:09): PID of Started API Process: 8384
+INFO: (LLM) (2024-06-27 20:01:40): Terminating process: 8383
+DEBUG: (httpx) (2024-06-27 20:01:40): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:01:40): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:01:40): connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:01:40): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b848acd0>
+DEBUG: (httpcore.connection) (2024-06-27 20:01:40): start_tls.started ssl_context=<ssl.SSLContext object at 0x7f04b85bd5b0> server_hostname='api.openai.com' timeout=900.0
+DEBUG: (httpcore.connection) (2024-06-27 20:01:40): start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b9098dd0>
+DEBUG: (httpcore.http11) (2024-06-27 20:01:40): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:01:40): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:01:40): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:01:40): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:01:40): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:01:44): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 27 Jun 2024 20:01:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-jm784xq78x9dnl73zhqr4lvp'), (b'openai-processing-ms', b'3988'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'10000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'9882'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'708ms'), (b'x-request-id', b'req_5c3e072ea752a33fec0673ab1fc20b97'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=TBP8lvrE1ReW8cH2zw726EVtU.wPUo4ofGUe1BPk2Ks-1719518504-1.0.1.1-1L3BpFS6m5.T6EsQnf2rIS4Gdps.f2XAzN8fFpKAoKDqEYCeWYOncrSP.oS6dXPnn1gb4s6eWNwdt0AZf9vWPA; path=/; expires=Thu, 27-Jun-24 20:31:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=dn279O6ZYdjdjXjCO5hrtVZhjIl0YKbfoVmPOSFQVCU-1719518504666-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a807c3be0c36c1-YYZ'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO: (httpx) (2024-06-27 20:01:44): HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-27 20:01:44): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:01:44): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:01:44): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 20:01:44): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-27 20:01:44): close.started
+DEBUG: (httpcore.connection) (2024-06-27 20:01:44): close.complete
+DEBUG: (httpx) (2024-06-27 20:13:59): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:13:59): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:13:59): connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:13:59): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b90dead0>
+DEBUG: (httpcore.connection) (2024-06-27 20:13:59): start_tls.started ssl_context=<ssl.SSLContext object at 0x7f04b85be180> server_hostname='api.openai.com' timeout=900.0
+DEBUG: (httpcore.connection) (2024-06-27 20:13:59): start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b8587a90>
+DEBUG: (httpcore.http11) (2024-06-27 20:13:59): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:13:59): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:13:59): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:13:59): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:13:59): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:14:05): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 27 Jun 2024 20:14:05 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-jm784xq78x9dnl73zhqr4lvp'), (b'openai-processing-ms', b'4956'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'10000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'9649'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'2.106s'), (b'x-request-id', b'req_49a8a3ea4d65e55cb9479627ff04164d'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=OZw70CFQVQJoE8yXF0C5oH.7eDMccljpkCPneY5CGoM-1719519245-1.0.1.1-onRRqgskRzu3nFmc9QxS9ke3TaZ305oaVDyDiPbY2pBp1ULqeC9b1UyecbINaAVbWF8NVlyVBNuVEuBNlNjoWg; path=/; expires=Thu, 27-Jun-24 20:44:05 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=4fTiCC_iXuD9wU3gYeoSC6aw8QdfmOAlfiQrdyvNrPk-1719519245099-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a819cf99c4ac63-YYZ'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO: (httpx) (2024-06-27 20:14:05): HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-27 20:14:05): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:14:05): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:14:05): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 20:14:05): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-27 20:14:05): close.started
+DEBUG: (httpcore.connection) (2024-06-27 20:14:05): close.complete
+INFO: (LLM) (2024-06-27 20:18:06): Start a new LLM process: ['python', '-m', 'llama_cpp.server', '--model', './models/tinyllama-1.1b-1t-openorca.Q6_K.gguf', '--host', '0.0.0.0', '--port', '8004', '--chat_format', 'chatml', '--verbose', 'False']
+INFO: (LLM) (2024-06-27 20:18:06): PID of Started LLM Process: 9788
+DEBUG: (httpx) (2024-06-27 20:18:16): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:18:16): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:18:16): connect_tcp.started host='0.0.0.0' port=8004 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:18:16): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b8449d10>
+DEBUG: (httpcore.http11) (2024-06-27 20:18:16): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:18:16): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:18:16): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:18:16): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:18:16): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:18:24): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 27 Jun 2024 20:18:16 GMT'), (b'server', b'uvicorn'), (b'content-length', b'891'), (b'content-type', b'application/json'), (b'openai-processing-ms', b'8064'), (b'x-request-id', b'be3b82d75ca143d6b523db4e4ba7edcc')])
+INFO: (httpx) (2024-06-27 20:18:24): HTTP Request: POST http://0.0.0.0:8004/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-27 20:18:24): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:18:24): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:18:24): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 20:18:24): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-27 20:18:24): close.started
+DEBUG: (httpcore.connection) (2024-06-27 20:18:24): close.complete
+INFO: (LLM) (2024-06-27 20:19:10): Terminating process: 9788
+INFO: (LLM) (2024-06-27 20:19:10): Start a new LLM process: ['python', '-m', 'llama_cpp.server', '--model', './models/llama-2-7b-chat.Q5_K_M.gguf', '--host', '0.0.0.0', '--port', '8004', '--chat_format', 'chatml', '--verbose', 'False']
+INFO: (LLM) (2024-06-27 20:19:10): PID of Started LLM Process: 9819
+DEBUG: (httpx) (2024-06-27 20:19:20): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:19:20): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:19:20): connect_tcp.started host='0.0.0.0' port=8004 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:19:20): connect_tcp.failed exception=ConnectError(OSError('All connection attempts failed'))
+ERROR: (LLM) (2024-06-27 20:19:20): Error: All connection attempts failed
+DEBUG: (httpx) (2024-06-27 20:19:30): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:19:30): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:19:30): connect_tcp.started host='0.0.0.0' port=8004 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:19:30): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b84c4850>
+DEBUG: (httpcore.http11) (2024-06-27 20:19:30): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:19:30): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:19:30): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:19:30): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:19:30): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:34:30): receive_response_headers.failed exception=ReadTimeout(TimeoutError())
+DEBUG: (httpcore.http11) (2024-06-27 20:34:30): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 20:34:30): response_closed.complete
+ERROR: (LLM) (2024-06-27 20:34:30): Error: 
+INFO: (LLM) (2024-06-27 20:41:02): Terminating process: 9819
+INFO: (LLM) (2024-06-27 20:41:02): Start a new LLM process: ['python', '-m', 'llama_cpp.server', '--model', './models/tinyllama-1.1b-1t-openorca.Q6_K.gguf', '--host', '0.0.0.0', '--port', '8004', '--chat_format', 'chatml', '--verbose', 'False']
+INFO: (LLM) (2024-06-27 20:41:02): PID of Started LLM Process: 10044
+DEBUG: (httpx) (2024-06-27 20:41:12): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 20:41:12): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 20:41:12): connect_tcp.started host='0.0.0.0' port=8004 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 20:41:12): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b84c4050>
+DEBUG: (httpcore.http11) (2024-06-27 20:41:12): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:41:12): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:41:12): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:41:12): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:41:12): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:41:18): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 27 Jun 2024 20:41:11 GMT'), (b'server', b'uvicorn'), (b'content-length', b'602'), (b'content-type', b'application/json'), (b'openai-processing-ms', b'6358'), (b'x-request-id', b'f69423aefb8041159bba727c2bd6ecb1')])
+INFO: (httpx) (2024-06-27 20:41:18): HTTP Request: POST http://0.0.0.0:8004/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-27 20:41:18): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 20:41:18): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 20:41:18): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 20:41:18): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-27 20:41:18): close.started
+DEBUG: (httpcore.connection) (2024-06-27 20:41:18): close.complete
+INFO: (LLM) (2024-06-27 21:17:36): Terminating process: 10044
+DEBUG: (httpx) (2024-06-27 21:17:37): load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG: (httpx) (2024-06-27 21:17:37): load_verify_locations cafile='/home/headless/miniconda3/envs/project-llm/lib/python3.11/site-packages/certifi/cacert.pem'
+DEBUG: (httpcore.connection) (2024-06-27 21:17:37): connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=900.0 socket_options=None
+DEBUG: (httpcore.connection) (2024-06-27 21:17:37): connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b8448750>
+DEBUG: (httpcore.connection) (2024-06-27 21:17:37): start_tls.started ssl_context=<ssl.SSLContext object at 0x7f04b85be9f0> server_hostname='api.openai.com' timeout=900.0
+DEBUG: (httpcore.connection) (2024-06-27 21:17:37): start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f04b84c66d0>
+DEBUG: (httpcore.http11) (2024-06-27 21:17:37): send_request_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 21:17:37): send_request_headers.complete
+DEBUG: (httpcore.http11) (2024-06-27 21:17:37): send_request_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 21:17:37): send_request_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 21:17:37): receive_response_headers.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 21:17:39): receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 27 Jun 2024 21:17:38 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'openai-organization', b'user-jm784xq78x9dnl73zhqr4lvp'), (b'openai-processing-ms', b'756'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'10000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'9791'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'1.254s'), (b'x-request-id', b'req_7240e2715541d8e950cadd31befbde5c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=WzslWom6F07FYP2Cyj9S4Bs8A7weNSlI0DOVPOQCc6w-1719523058-1.0.1.1-NG5iLvD66dLqI_MsYeK3Ecg.1xoLwVpar2EurIdH1Xps6yyNKMqpWcH4CAn.il2M_SiJZLAQs9aPKMysyn5EEQ; path=/; expires=Thu, 27-Jun-24 21:47:38 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=nRJh6QM.VNLqV_X_OzpBe37V58vBMFK3iBoORsn4bj8-1719523058916-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'89a87705fe7dac60-YYZ'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO: (httpx) (2024-06-27 21:17:39): HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG: (httpcore.http11) (2024-06-27 21:17:39): receive_response_body.started request=<Request [b'POST']>
+DEBUG: (httpcore.http11) (2024-06-27 21:17:39): receive_response_body.complete
+DEBUG: (httpcore.http11) (2024-06-27 21:17:39): response_closed.started
+DEBUG: (httpcore.http11) (2024-06-27 21:17:39): response_closed.complete
+DEBUG: (httpcore.connection) (2024-06-27 21:17:39): close.started
+DEBUG: (httpcore.connection) (2024-06-27 21:17:39): close.complete
+INFO: (LLM) (2024-06-27 21:43:51): Terminating process: 8383
+INFO: (LLM) (2024-06-27 21:43:51): Terminating process: 8384
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:38:56): Successfully loaded extension "markdown.extensions.toc.TocExtension".

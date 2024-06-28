@@ -1,0 +1,239 @@
+INFO: (STT) (2024-06-27 23:17:24): Terminating server
+INFO: (STT) (2024-06-27 23:17:50): Terminating server
+DEBUG: (STT) (2024-06-27 23:17:56): Model: google-sr
+INFO: (STT) (2024-06-27 23:18:07): Terminating server
+DEBUG: (STT) (2024-06-27 23:18:13): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:18:13): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:18:52): Terminating server
+DEBUG: (STT) (2024-06-27 23:19:38): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:19:38): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:19:40): what is the fastest way from Toronto to Paris
+DEBUG: (STT) (2024-06-27 23:20:18): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:20:18): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:20:19): what is the fastest way from toronto to paris
+DEBUG: (STT) (2024-06-27 23:20:42): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:20:42): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:20:44): who is the tallest man in the world
+DEBUG: (STT) (2024-06-27 23:20:52): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:20:52): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:20:53): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:20:53): 
+DEBUG: (STT) (2024-06-27 23:21:10): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:21:10): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:21:12): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:21:12): 
+DEBUG: (STT) (2024-06-27 23:21:17): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:21:17): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-27 23:21:26): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:21:26): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:21:28): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:21:28): 
+DEBUG: (STT) (2024-06-27 23:21:33): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:21:33): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:21:35): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:21:35): 
+DEBUG: (STT) (2024-06-27 23:22:04): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:22:04): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:22:06): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:22:06): 
+DEBUG: (STT) (2024-06-27 23:22:19): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:22:19): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:22:22): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:22:22): 
+DEBUG: (STT) (2024-06-27 23:22:39): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:22:39): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:22:40): who is the tallest man in the world
+DEBUG: (STT) (2024-06-27 23:23:01): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:23:01): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:23:03): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:23:03): 
+DEBUG: (STT) (2024-06-27 23:23:27): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-27 23:23:27): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-27 23:23:29): No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-27 23:23:29): 
+DEBUG: (STT) (2024-06-27 23:24:03): Model: vogoogle-sr
+DEBUG: (STT) (2024-06-27 23:24:18): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:24:18): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-27 23:24:33): Terminating server
+DEBUG: (STT) (2024-06-27 23:24:43): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:24:43): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-27 23:24:53): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:24:53): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-27 23:25:10): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-27 23:25:10): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 01:10:30): Terminating server
+DEBUG: (STT) (2024-06-28 01:11:01): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 01:11:02): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 01:11:04): what is the fastest way from Toronto to Paris
+DEBUG: (STT) (2024-06-28 01:11:36): Model: vosk-large
+DEBUG: (pydub.converter) (2024-06-28 01:11:36): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 01:11:58): Model: vosk-large
+DEBUG: (pydub.converter) (2024-06-28 01:11:59): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 01:12:46): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 01:12:47): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 01:12:48): what is the fastest way from toronto to paris
+DEBUG: (STT) (2024-06-28 01:13:06): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 01:13:06): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 01:13:08): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 01:13:08): 
+INFO: (STT) (2024-06-28 01:14:06): Terminating server
+DEBUG: (STT) (2024-06-28 01:14:11): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 01:14:11): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 01:14:13): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 01:14:13): 
+INFO: (STT) (2024-06-28 01:15:01): Terminating server
+DEBUG: (STT) (2024-06-28 01:15:17): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 01:15:17): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 01:15:22): let me tell you a story once I finish please continue the story for me the story is About A Boy Called Jack who went up a ladder what happened next
+INFO: (STT) (2024-06-28 01:44:38): Terminating server
+DEBUG: (STT) (2024-06-28 02:06:20): Model: google-sr
+DEBUG: (pydub.converter) (2024-06-28 02:06:20): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:06:21): what is the fastest way from Toronto to Paris
+DEBUG: (STT) (2024-06-28 02:06:49): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:06:49): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:06:50): Results: {'result': [{'conf': 1.0, 'end': 0.81, 'start': 0.51, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.81, 'word': 'is'}, {'conf': 1.0, 'end': 1.08, 'start': 0.96, 'word': 'the'}, {'conf': 1.0, 'end': 1.74, 'start': 1.08, 'word': 'fastest'}, {'conf': 1.0, 'end': 1.98, 'start': 1.74, 'word': 'way'}, {'conf': 1.0, 'end': 2.22, 'start': 1.98, 'word': 'from'}, {'conf': 1.0, 'end': 2.7, 'start': 2.22, 'word': 'toronto'}, {'conf': 0.749593, 'end': 2.85, 'start': 2.7, 'word': 'to'}, {'conf': 1.0, 'end': 3.51, 'start': 2.85, 'word': 'paris'}], 'text': 'what is the fastest way from toronto to paris'}
+INFO: (STT) (2024-06-28 02:06:50): what is the fastest way from toronto to paris
+DEBUG: (STT) (2024-06-28 02:06:56): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:06:56): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:06:57): Results: {'result': [{'conf': 1.0, 'end': 0.66, 'start': 0.24, 'word': 'who'}, {'conf': 1.0, 'end': 0.93, 'start': 0.69, 'word': 'is'}, {'conf': 1.0, 'end': 1.11, 'start': 0.93, 'word': 'the'}, {'conf': 1.0, 'end': 1.83, 'start': 1.11, 'word': 'tallest'}, {'conf': 1.0, 'end': 2.25, 'start': 1.86, 'word': 'man'}, {'conf': 1.0, 'end': 2.34, 'start': 2.25, 'word': 'in'}, {'conf': 1.0, 'end': 2.46, 'start': 2.34, 'word': 'the'}, {'conf': 1.0, 'end': 2.97, 'start': 2.46, 'word': 'world'}], 'text': 'who is the tallest man in the world'}
+INFO: (STT) (2024-06-28 02:06:57): who is the tallest man in the world
+DEBUG: (STT) (2024-06-28 02:07:02): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:07:02): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:07:03): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:07:03): 
+INFO: (STT) (2024-06-28 02:17:47): Terminating server
+DEBUG: (STT) (2024-06-28 02:17:55): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:17:55): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:17:56): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:17:56): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:17:56): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:17:56): 
+INFO: (STT) (2024-06-28 02:18:11): Terminating server
+DEBUG: (STT) (2024-06-28 02:18:21): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:18:21): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:18:22): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:18:23): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:18:23): Results: {'result': [{'conf': 1.0, 'end': 0.81, 'start': 0.51, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.81, 'word': 'is'}, {'conf': 1.0, 'end': 1.08, 'start': 0.96, 'word': 'the'}, {'conf': 1.0, 'end': 1.74, 'start': 1.08, 'word': 'fastest'}, {'conf': 1.0, 'end': 1.98, 'start': 1.74, 'word': 'way'}, {'conf': 1.0, 'end': 2.22, 'start': 1.98, 'word': 'from'}, {'conf': 1.0, 'end': 2.7, 'start': 2.22, 'word': 'toronto'}, {'conf': 0.749593, 'end': 2.85, 'start': 2.7, 'word': 'to'}, {'conf': 1.0, 'end': 3.51, 'start': 2.85, 'word': 'paris'}], 'text': 'what is the fastest way from toronto to paris'}
+INFO: (STT) (2024-06-28 02:18:23): what is the fastest way from toronto to paris
+DEBUG: (STT) (2024-06-28 02:22:09): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:22:09): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:22:10): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:22:11): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:22:11): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:22:11): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.0, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.71, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.71, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.25, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 1.0, 'end': 3.78, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.14, 'start': 3.78, 'word': 'like'}, {'conf': 1.0, 'end': 4.38, 'start': 4.2, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.38, 'word': 'did'}, {'conf': 1.0, 'end': 4.89, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.854235, 'end': 6.09, 'start': 5.61, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+INFO: (STT) (2024-06-28 02:22:11): what was wrong with my previous recording it looked like i did it completely okay
+INFO: (STT) (2024-06-28 02:22:55): Terminating server
+DEBUG: (STT) (2024-06-28 02:23:02): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:23:02): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:23:23): Terminating server
+DEBUG: (STT) (2024-06-28 02:23:29): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:23:29): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:23:31): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.0, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.71, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.71, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.25, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 1.0, 'end': 3.78, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.14, 'start': 3.78, 'word': 'like'}, {'conf': 1.0, 'end': 4.38, 'start': 4.2, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.38, 'word': 'did'}, {'conf': 1.0, 'end': 4.89, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.854235, 'end': 6.09, 'start': 5.61, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+INFO: (STT) (2024-06-28 02:23:31): what was wrong with my previous recording it looked like i did it completely okay
+DEBUG: (STT) (2024-06-28 02:25:32): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:25:33): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:25:34): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:25:34): 
+INFO: (STT) (2024-06-28 02:26:33): Terminating server
+DEBUG: (STT) (2024-06-28 02:26:40): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:26:40): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:41): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:26:42): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:26:42): 
+INFO: (STT) (2024-06-28 02:27:01): Terminating server
+DEBUG: (STT) (2024-06-28 02:27:07): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:27:07): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:27:07): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:07): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:08): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:27:08): 
+DEBUG: (STT) (2024-06-28 02:27:39): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:27:39): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:27:39): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:27:40): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.0, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.71, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.71, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.25, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 1.0, 'end': 3.78, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.14, 'start': 3.78, 'word': 'like'}, {'conf': 1.0, 'end': 4.38, 'start': 4.2, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.38, 'word': 'did'}, {'conf': 1.0, 'end': 4.89, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.854245, 'end': 6.09, 'start': 5.61, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+ERROR: (STT) (2024-06-28 02:27:40): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:27:40): what was wrong with my previous recording it looked like i did it completely okay
+INFO: (STT) (2024-06-28 02:30:30): Terminating server
+DEBUG: (STT) (2024-06-28 02:30:49): Model: vosk-small
+DEBUG: (pydub.converter) (2024-06-28 02:30:49): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:30:51): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.0, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.71, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.71, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.25, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 1.0, 'end': 3.78, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.14, 'start': 3.78, 'word': 'like'}, {'conf': 1.0, 'end': 4.38, 'start': 4.2, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.38, 'word': 'did'}, {'conf': 1.0, 'end': 4.89, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.854235, 'end': 6.09, 'start': 5.61, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+INFO: (STT) (2024-06-28 02:30:51): what was wrong with my previous recording it looked like i did it completely okay
+DEBUG: (STT) (2024-06-28 02:30:59): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:30:59): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:31:01): Results: {'result': [{'conf': 1.0, 'end': 0.72, 'start': 0.33, 'word': 'what'}, {'conf': 1.0, 'end': 0.96, 'start': 0.72, 'word': 'was'}, {'conf': 1.0, 'end': 1.38, 'start': 0.96, 'word': 'wrong'}, {'conf': 1.0, 'end': 1.53, 'start': 1.38, 'word': 'with'}, {'conf': 1.0, 'end': 1.74, 'start': 1.53, 'word': 'my'}, {'conf': 1.0, 'end': 2.25, 'start': 1.77, 'word': 'previous'}, {'conf': 1.0, 'end': 3.0, 'start': 2.250372, 'word': 'recording'}, {'conf': 1.0, 'end': 3.48, 'start': 3.27, 'word': 'it'}, {'conf': 0.979713, 'end': 3.81, 'start': 3.48, 'word': 'looked'}, {'conf': 1.0, 'end': 4.139881, 'start': 3.81, 'word': 'like'}, {'conf': 0.993374, 'end': 4.38, 'start': 4.17, 'word': 'i'}, {'conf': 1.0, 'end': 4.62, 'start': 4.380199, 'word': 'did'}, {'conf': 1.0, 'end': 4.86, 'start': 4.62, 'word': 'it'}, {'conf': 1.0, 'end': 5.61, 'start': 5.01, 'word': 'completely'}, {'conf': 0.913095, 'end': 6.09, 'start': 5.610234, 'word': 'okay'}], 'text': 'what was wrong with my previous recording it looked like i did it completely okay'}
+INFO: (STT) (2024-06-28 02:31:01): what was wrong with my previous recording it looked like i did it completely okay
+DEBUG: (STT) (2024-06-28 02:31:50): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:31:50): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:31:53): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:31:53): 
+DEBUG: (STT) (2024-06-28 02:31:59): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:31:59): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+INFO: (STT) (2024-06-28 02:32:01): Results: {'result': [{'conf': 1.0, 'end': 1.02, 'start': 0.66, 'word': 'why'}, {'conf': 0.998498, 'end': 1.169628, 'start': 1.02, 'word': 'do'}, {'conf': 0.856775, 'end': 1.768136, 'start': 1.170107, 'word': 'stars'}, {'conf': 1.0, 'end': 2.4, 'start': 1.768136, 'word': 'sparkle'}, {'conf': 1.0, 'end': 3.48, 'start': 3.3, 'word': 'and'}, {'conf': 1.0, 'end': 3.75, 'start': 3.48, 'word': 'how'}, {'conf': 1.0, 'end': 4.02, 'start': 3.75, 'word': 'big'}, {'conf': 1.0, 'end': 4.2, 'start': 4.02, 'word': 'is'}, {'conf': 1.0, 'end': 4.32, 'start': 4.2, 'word': 'the'}, {'conf': 1.0, 'end': 5.01, 'start': 4.32, 'word': 'galaxy'}], 'text': 'why do stars sparkle and how big is the galaxy'}
+INFO: (STT) (2024-06-28 02:32:01): why do stars sparkle and how big is the galaxy
+DEBUG: (STT) (2024-06-28 02:32:10): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:32:10): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:32:14): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:32:14): 
+DEBUG: (STT) (2024-06-28 02:32:22): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:32:22): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-vn', '-f', 'wav', '-'])
+DEBUG: (STT) (2024-06-28 02:32:32): Model: vosk-lgraph
+DEBUG: (pydub.converter) (2024-06-28 02:32:32): subprocess.call(['ffmpeg', '-y', '-read_ahead_limit', '-1', '-i', 'cache:pipe:0', '-acodec', 'pcm_s16le', '-vn', '-f', 'wav', '-'])
+ERROR: (STT) (2024-06-28 02:32:36): ERROR: No speech was recognized, or processing failed.
+INFO: (STT) (2024-06-28 02:32:36): 
+INFO: (STT) (2024-06-28 02:33:54): Terminating server
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:19): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN) (2024-06-28 04:33:51): Successfully loaded extension "markdown.extensions.toc.TocExtension".
