@@ -1122,3 +1122,34 @@ DEBUG: (API[historyStore]) (2024-06-28 17:15:06): Model: llama-small-high, Max T
 DEBUG: (API[query]) (2024-06-28 17:15:06): Total time: 16.00853657722473
 INFO: (API[query]) (2024-06-28 17:15:06): Response:  Tokyo is the capital city of Japan.
 INFO: (API[main]) (2024-06-28 17:17:13): Terminating server
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.abbr".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.attr_list".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.def_list".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.fenced_code".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.footnotes".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.tables".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.tables.TableExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.admonition".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.smarty".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+DEBUG: (MARKDOWN[build_extension]) (2024-06-28 22:22:25): Successfully imported extension module "markdown.extensions.toc".
+DEBUG: (MARKDOWN[registerExtensions]) (2024-06-28 22:22:25): Successfully loaded extension "markdown.extensions.toc.TocExtension".
+DEBUG: (API[historyStore]) (2024-06-28 23:59:17): Model: gpt-4, Max Tokens: 600, Role: user, Content: Who is the fastest person in the world
+DEBUG: (API[query]) (2024-06-28 23:59:17): {"model":"gpt-4", "messages":[{"role": "user", "content": "what is the capital of japan"}, {"role": "system", "content": " Tokyo is the capital city of Japan."}, {"role": "user", "content": "Who is the fastest person in the world"}], "max_tokens":600}
+INFO: (API[query]) (2024-06-28 23:59:17): Changing model to gpt-4 via http://0.0.0.0:8003/model/gpt-4
+INFO: (API[request]) (2024-06-28 23:59:17): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 23:59:17): Response: True
+INFO: (API[query]) (2024-06-28 23:59:17): Model has been changed to gpt-4
+DEBUG: (API[query]) (2024-06-28 23:59:17): Sending prompt Who is the fastest person in the world via http://0.0.0.0:8003/relay/v1/chat/completions
+INFO: (API[request]) (2024-06-28 23:59:20): Attempting to encode as UTF-8
+INFO: (API[request]) (2024-06-28 23:59:20): Response: {'id': 'chatcmpl-9fFmn71odiBdGrG2trSm2Y8TZz4cV', 'object': 'chat.completion', 'created': 1719619157, 'model': 'gpt-4-0613', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Usain Bolt holds the record for being the fastest person in the world. He hails from Jamaica and set the record by running 100 meters in 9.58 seconds in August 2009.'}, 'logprobs': None, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 37, 'completion_tokens': 41, 'total_tokens': 78}, 'system_fingerprint': None}
+DEBUG: (API[query]) (2024-06-28 23:59:20): Obtained response Usain Bolt holds the record for being the fastest person in the world. He hails from Jamaica and set the record by running 100 meters in 9.58 seconds in August 2009. for prompt
+DEBUG: (API[historyStore]) (2024-06-28 23:59:20): Model: gpt-4, Max Tokens: 600, Role: system, Content: Usain Bolt holds the record for being the fastest person in the world. He hails from Jamaica and set the record by running 100 meters in 9.58 seconds in August 2009.
+DEBUG: (API[query]) (2024-06-28 23:59:20): Total time: 3.3690056800842285
+INFO: (API[query]) (2024-06-28 23:59:20): Response: Usain Bolt holds the record for being the fastest person in the world. He hails from Jamaica and set the record by running 100 meters in 9.58 seconds in August 2009.
